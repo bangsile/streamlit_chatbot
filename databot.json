@@ -1,624 +1,1789 @@
-{"intents": [
-    {"tag": "kabar",
-     "patterns": ["Apa kabar", "Bagaimana Kabar"],
-     "responses": ["Kabar saya baik bagaimana dengan Anda?"]
-    },
-    {"tag": "Salam",
-     "patterns": ["Halo", "Hy", "Hello", "Hai"],
-     "responses": ["Halooo, ada yang bisa saya bantu?", "Hy, ada yang bisa saya bantu?", "Hello, ada yang bisa saya bantu?"]
-    },
+{
+	"intents": [
+		{
+			"tag": "kabar",
+			"patterns": ["Apa kabar", "Bagaimana Kabar"],
+			"responses": ["Kabar saya baik bagaimana dengan Anda?"]
+		},
+		{
+			"tag": "Salam",
+			"patterns": ["Halo", "Hy", "Hello", "Hai"],
+			"responses": [
+				"Halooo, ada yang bisa saya bantu?",
+				"Hy, ada yang bisa saya bantu?",
+				"Hello, ada yang bisa saya bantu?"
+			]
+		},
 
-    {"tag": "Salam pagi",
-    "patterns": ["Pagi", "Selamat pagi"],
-    "responses": ["Selamat pagi semangat untuk hari ini","Pagi kak, ada yang bisa saya bantu?"]
-    },
-    {"tag": "Salam siang",
-    "patterns": ["Siang", "Selamat siang"],
-    "responses": ["Selamat siang ada yang bisa saya bantu?", "Siang kak, semoga hari ini menyenangkan. Ada yang bisa saya bantu?"]
-    },
-    {"tag": "Salam sore",
-    "patterns": ["Sore","Selamat sore"],
-    "responses": ["Selamat sore juga ada yang dapat saya bantu?"]
-    },
-    {"tag": "Salam malam",
-    "patterns": ["Malam", "Selamat malam"],
-    "responses": ["Selamat malam juga apa yang bisa saya lakukan untuk Anda?"]
-    },
+		{
+			"tag": "Salam pagi",
+			"patterns": ["Pagi", "Selamat pagi"],
+			"responses": [
+				"Selamat pagi semangat untuk hari ini",
+				"Pagi kak, ada yang bisa saya bantu?"
+			]
+		},
+		{
+			"tag": "Salam siang",
+			"patterns": ["Siang", "Selamat siang"],
+			"responses": [
+				"Selamat siang ada yang bisa saya bantu?",
+				"Siang kak, semoga hari ini menyenangkan. Ada yang bisa saya bantu?"
+			]
+		},
+		{
+			"tag": "Salam sore",
+			"patterns": ["Sore", "Selamat sore"],
+			"responses": ["Selamat sore juga ada yang dapat saya bantu?"]
+		},
+		{
+			"tag": "Salam malam",
+			"patterns": ["Malam", "Selamat malam"],
+			"responses": ["Selamat malam juga apa yang bisa saya lakukan untuk Anda?"]
+		},
 
-    {"tag": "napoleon 777",
-        "patterns": ["kapan kapal Napoleon berangkat?", "kapan kapal Napoleon berangkat ke kendari?", "kapan kapal Napoleon berangkat ke wanci?", "kapan kapal Napoleon 777 berangkat dari Wanci ke Kendari?", "kapan kapal Napoleon 777 berangkat dari Kendari ke Wanci?"],
-        "responses": ["kapal Napoleon 777 berangkat pada hari selasa dari wanci ke kendari pada jam 09:00 WITA dan berangkat pada hari rabu dari kendari ke wanci pada jam 09:00 WITA"]
-    },
-    {"tag": "jadwal kapal kendari",
-        "patterns": ["kapal apa yang berangkat dari wanci ke kendari","kapal apa yang berangkat dari kendari ke wanci", "jadwal kapal kendari" ],
-        "responses": ["jadwal kapal kendari-wanci atau wanci-kendari ada 2 kapal yaitu Napoleon 777 dan Simba 01 ada pada hari selasa dan rabu"]
-    },
-    {"tag": "harga tiket kapal Kendari",
-        "patterns": ["berapa harga tiket kapal dari kendari-wanci?", "tiket kapal dari kendari-wanci berapa?", "berapa harga tiket untuk perjalanan kapal kendari-wanci", "berapa tiket kapal dari kendari-wanci?", "tiket kapal dari wanci-kendari berapa?", "berapa harga tiket kapal dari wanci ke kendari?", "harga kapal tiket kendari", "harga kapal tiket wanci","berapa harga tiket kendari?", "berapa harga tiket wanci?", "berapa harga tiket kapal wanci?", "berapa harga tiket kapal kendari?", "berapa tiket kapal wanci?", "berapa tiket kapal kendari?"],
-        "responses": ["Harga tiket kapal dari kendari-wanci dan wanci-kendari adalah Rp.220.000 perorang (dewasa). sedangkan harga tiket kamar Rp.200.000 perorang"]
-    },
-    {"tag": "pesan tiket",
-     "patterns": ["Bagaimana cara pesan tiket kapal ke kendari-wanci?","cara pesan tiket kapal kendari-wanci bagaimana?", "dimana saya bisa membeli tiket kapal kendari-wanci?", "Bagaimana cara pesan tiket kapal kendari ke wanci?", "Bagaimana cara pesan tiket kapal kendari?", "Bagaimana cara pesan tiket kapal wanci?", "Bagaimana cara pesan tiket kapal ke kendari?", "Bagaimana cara pesan tiket kapal ke wanci", "cara pesan tiket kapal wanci", "cara pesan tiket kapal kendari"],
-     "responses": ["pemesanan tiket kapal kendari-wanci atau wanci-kendari bisa dilakukan di loket penjualan tiket di pelabuhan wanci jika dari wanci dan di pelabuhan kapal wanci di kendari jika berangkat dari kendari."]
-    },
-    {"tag": "batalkan tiket",
-     "patterns": ["apakah bisa membatalkan tiket kapal yang sudah saya pesan?", "bagaiamana cara membatalkan tiket kapal ke kendari?", "pembatalan tiket"],
-     "responses": ["pembatalan tiket kapal bisa dilakukan di loket tiket kapal di pelabuhan"]
-    },
-    {"tag": "ubah jadwal keberangkatan",
-        "patterns": ["bagaiamana cara mengubah jadwal keberangkatan kapal saya?", "apakah saya bisa mengubah waktu keberangkatan kapal?", "bagaiamana cara mengubah jadwal berangkat kapal?", "cara mengubah jadwal kapal"],
-        "responses": ["anda bisa mengubah jadwal keberangkatan melalui situs web FERINESIA.COM dan bisa langsung ke loket tiket kapal terdekat"]
-    },
-    {"tag": "kapal yang tersedia",  
-        "patterns": ["kapal apa saja yang tersedia untuk rute ternate ke manado?", "Kapal apa yang tersedia untuk perjalanan dari Ternate ke Manado?", "apakah ada kapal yang berangkat dari ternate ke manado?", "adakah kapal tujuan ternate ke manado??", "kapal tujuan manado", "kapal tujuan manado", "kapal ternate manado", "kapal rute manado", "kapal tujuan ke manado", "kapal tujuan manado"],
-        "responses": ["kapal yang tersedia untuk rute ternate ke manado adalah kapal Aksar Saputra 09"]
-    },
-    {"tag": "kapal yang tersedia untuk ternate fala",  
-        "patterns": ["kapal apa saja yang tersedia untuk rute ternate ke fala?", "Kapal apa yang tersedia untuk perjalanan dari Ternate ke fala?", "apakah ada kapal yang berangkat dari ternate ke fala?", "adakah kapal tujuan ternate ke fala?", "kapal tujuan fala", "kapal tujuan fala", "kapal ternate fala", "kapal rute fala", "kapal tujuan ke fala"],
-        "responses": ["kapal yang tersedia untuk rute ternate ke fala adalah kapal Aksar Saputra 09"]
-    },
-    {"tag": "kapal yang tersedia untuk ternate sanana",  
-        "patterns": ["kapal apa saja yang tersedia untuk rute ternate ke sanana?", "Kapal apa yang tersedia untuk perjalanan dari Ternate ke sanana?", "apakah ada kapal yang berangkat dari ternate ke sanana?", "adakah kapal tujuan ternate ke sanana??", "kapal tujuan sanana", "kapal ternate sanana", "kapal sanana ternate", "kapal rute sanana", "kapal tujuan ke sanana", "kapal tujuan sanana ternate"],
-        "responses": ["kapal yang tersedia untuk rute ternate ke sanana atau sanana ke ternate adalah kapal Aksar Saputra 09"]
-    },
-    {"tag": "kapal yang tersedia untuk ternate dofa",  
-        "patterns": ["kapal apa saja yang tersedia untuk rute ternate ke dofa?", "Kapal apa yang tersedia untuk perjalanan dari Ternate ke dofa?", "apakah ada kapal yang berangkat dari ternate ke dofa?", "adakah kapal tujuan ternate ke dofa??", "kapal tujuan dofa", "kapal ternate dofa", "kapal sanana dofa", "kapal rute dofa", "kapal tujuan dofa ternate"],
-        "responses": ["kapal yang tersedia untuk rute ternate ke dofa adalah kapal Aksar Saputra 09"]
-    },
-    {"tag": "kapal yang tersedia untuk sanana dofa",  
-        "patterns": ["kapal apa saja yang tersedia untuk rute sanana ke dofa?", "Kapal apa yang tersedia untuk perjalanan dari sanana ke dofa?", "apakah ada kapal yang berangkat dari sanana ke dofa?", "adakah kapal tujuan sanana ke dofa??", "kapal sanana dofa", "kapal dofa sanana", "kapal rute dofa", "kapal tujuan ke dofa", "kapal tujuan sanana dofa", "kapal apa yang berangkat dari sanana ke dofa?", "kapal apa yang berangakt dari dofa ke sanana?"],
-        "responses": ["kapal yang tersedia untuk rute sanana ke dofa adalah kapal Aksar Saputra 09"]
-    },
-    {"tag": "kapal yang tersedia untuk fala dofa",  
-        "patterns": ["kapal apa saja yang tersedia untuk rute fala ke dofa?", "Kapal apa yang tersedia untuk perjalanan dari fala ke dofa?", "apakah ada kapal yang berangkat dari fala ke dofa?", "adakah kapal tujuan fala ke dofa??", "kapal fala dofa", "kapal dofa fala", "kapal tujuan fala dofa", "kapal apa yang berangkat dari fala ke dofa?", "kapal apa yang berangakt dari dofa ke fala?"],
-        "responses": ["kapal yang tersedia untuk rute fala ke dofa atau fala ke dofa adalah kapal Aksar Saputra 09"]
-    },
-    {"tag": "kapal yang tersedia untuk manado sanana",  
-        "patterns": ["kapal apa saja yang tersedia untuk rute manado ke sanana?", "Kapal apa yang tersedia untuk perjalanan dari manado ke sanana?", "apakah ada kapal yang berangkat dari manado ke sanana?", "adakah kapal tujuan manado ke sanana??", "kapal manado sanana", "kapal sanana manado", "kapal tujuan manado sanana", "kapal apa yang berangkat dari manado ke sanana?", "kapal apa yang berangkat dari sanana ke manado?"],
-        "responses": ["kapal yang tersedia untuk rute manado ke sanana atau sanana ke manado adalah kapal Aksar Saputra 09"]
-    },
-    {"tag": "kapal yang tersedia untuk manado dofa",  
-        "patterns": ["kapal apa saja yang tersedia untuk rute manado ke dofa?", "Kapal apa yang tersedia untuk perjalanan dari manado ke dofa?", "apakah ada kapal yang berangkat dari manado ke dofa?", "adakah kapal tujuan manado ke dofa??", "kapal manado dofa", "kapal dofa manado", "kapal tujuan manado dofa", "kapal apa yang berangkat dari manado ke dofa?", "kapal apa yang berangkat dari dofa ke manado?"],
-        "responses": ["kapal yang tersedia untuk rute manado ke dofa atau dofa ke manado adalah kapal Aksar Saputra 09"]
-    },
-    {"tag": "kapal yang tersedia untuk manado fala",  
-        "patterns": ["kapal apa saja yang tersedia untuk rute manado ke fala?", "Kapal apa yang tersedia untuk perjalanan dari manado ke fala?", "apakah ada kapal yang berangkat dari manado ke fala?", "adakah kapal tujuan manado ke fala??", "kapal manado fala", "kapal fala manado", "kapal tujuan manado fala", "kapal apa yang berangkat dari manado ke fala?", "kapal apa yang berangkat dari fala ke manado?"],
-        "responses": ["kapal yang tersedia untuk rute manado ke fala atau fala ke manado adalah kapal Aksar Saputra 09"]
-    },
-    {"tag": "durasi perjalanan",
-     "patterns": ["berapa lama perjalanan kapal dari kendari ke wanci?","berapa lama perjalanan kapal dari wanci ke kendari?"],
-     "responses": ["perjalanan kapal dari kendari ke wanci adalah 9 sampai dengan 10 jam tiba"]
-    },
-    {"tag": "durasi perjalanan kapal",
-    "patterns": ["berapa jam perjalanan dari ternate ke fala?", "berapa jam perjalanan ke fala", "berapa jam perjalanan ke fala ke ternate"],
-    "responses": ["waktu yang ditempuh dari ternate menuju fala atau dari fala ke ternate adalah 20 jam"]
-   },
-    {"tag": "fasilitas di kapal aksar saputra 09",
-        "patterns": ["fasilitas apa saja yang tersedia di kapal Aksar Saputra 09?", "fasilitas apa yang ada di kapal Aksar Saputra 09?", "fasilitas apa yang ada di kapal Aksar 09?", "fasilitas apa yang ada di kapal Aksar 9?", "apa saja fasilitas yang ada di kapal Aksar Saputra 08", "Kapal Simba 01 ada fasilitas apa saja?", "bisa beri tahu saya fasilitas yang ada pada kapal Napoleon 777?", "Ada fasilitas apa saja yang ada di kapal Aksar Saputra 23?", "di kapal Bunda Maria tersedia fasilitas apa saja?"],
-        "responses": ["fasilitas yang tersedia di kapal Aksar Saputra 09 dilengkapi dengan fasilitas toilet, kantin, ranjang tidur, kamar(VIP), ruangan ber AC dan hiburan karaoke"]
-    },
-    {"tag": "layanan di kapal",
-        "patterns": ["Layanan apa yang tersedia dikapal?", "ada layanan apa saja di kapal dari ternate ke Fala?", "Tolong beri tau saya layanan yang disediakan di kapal Aksar Saputra 23?", "Layanan apa saja yang tersedia di kapal menuju kendari?", "ada layanan apa saja di kapal aksar saputra 08?" ],
-        "responses": ["layanan yang tersedia di kapal selama perjalanan meliputi layanan makanan dan minuman serta bantuan medis darurat"]
-    },
-    {"tag": "diskon tiket",
-        "patterns": ["apakah ada diskon tiket untuk mahasiswa?", "apakah ada diskon tiket untuk penumpang yang rombongan?", "apakah ada diskon tiket aksar saputra 23?"],
-        "responses": ["kami menyediakan diskon tiket untuk penumpang rombongan sebesar 25% dari harga tiket kapal untuk seluruh penumpang yang melakukan keberangkatan rute perjalanan kapal pada PT. Aksar Saputra Lines"]
-    },
-    {"tag": "bawa kendaraan di kapal",
-    "patterns": ["apakah saya bisa membawa kendaraan ke kapal?", "bisakah bawa kendaraan di kapal?", "berapa biaya untuk membawa kendaraan di kapal?", "bisakah bawa motor untuk diangkut dikapal?", " apakah boleh kirim motor?", "apakah boleh bawa sepeda?", "apakah boelh kirim motor atau sepeda dikapal?"],
-    "responses": ["Ya, bisa membawa kendaraan ke kapal. silahkan informasikan jenis kendaraan anda saat memesan tiket", "untuk membawa kendaraan di kapal adalah boleh. pastikan anda melaporkan kendaraan yang akan anda bawa", " biaya untuk membawa kendaraan di kapal bervariasi tergantung pada jenis kendaraan"]
-    },
-    {"tag": "kebijakan bagasi",
-    "patterns": ["apa kebijakan bagasi di kapal", "apakah ada biaya tambahan untuk bagasi di kapal?", " apakah ada aturan bagasi di kapal?"],
-    "responses": ["setiap penumpang diizinkan membawa bagasi hingga [jumlah berat], kebijakan bagasi untuk kapal memperbolehkan bagasi dan tidak dikenakan biaya tambahan, dan tidak ada aturan tertentu untuk ketentuan bagasi di kapal "]
-    },
-    {"tag": "fasilitas penumpang khusus",
-        "patterns": ["apa fasilitas yang tersedia untuk penumpang difabel?", " apakah ada fasilitas khusus untuk lansia di kapal?", "apakah ada bantuan khsusu untuk penumpang dengan disabilitas?"],
-        "responses": ["untuk saat ini, fasilitas untuk penumpang difabel belum tersedia khusus, fasilitas khusus untuk lansia belum ada di kapal, tapi kami dari ABK kapal meyakinkan bahwa penumpang lansia aman di dalam kapal selama perjalanan bersama kami, untuk penumpang dengan disabilitas akan mendapatkan bantuan dari ABK kapal selama perjalanan"]
-    },
-    {"tag": "penundaan karna cuaca",
-        "patterns": ["apakah kapal akan tertunda jika cuaca buruk?", "apakah jadwal kapal bisa berubah jika cuaca buruk?", "apakah kapal tidak di berangkatkan jika cuaca buruk?"],
-        "responses": ["kapal akan tertunda jika cuaca buruk, sehingga calon penumpang diharapkan untuk tetap menununggu informasi dari ABK kapal. jika cuaca tidak membaik kurang lebih dari 12 jam. maka calon penumpang bisa membatalkan keberangkatan. sehingga uang tiket kapal yang telah dibeli akan dikembalikan ke penumpang"]
-    },
-    {"tag": "pembatalan keberangkatan",
-        "patterns": ["bagaimana cara membatalkan keberangkatan kapal saya?", "apa syarat untuk membatalkan tiket kapal?"],
-        "responses": ["untuk membatalkan keberangkatan anda, anda bisa pergi ke loket tiket tempat anda membeli tiket agar bisa dibatalkan sebelum kapal berangkat"]
-    },
-    {"tag": "simba 01",
-        "patterns": ["kapan kapal Simba berangkat?", "kapan kapal Simba 01 berangkat?", "kapan kapal Simba berangkat ke kendari?", "kapan kapal Simba 01 berangkat ke kendari?", "kapan kapal Simba berangkat ke wanci?", "kapan kapal Simba 01 berangkat ke wanci?", "kapan kapal simba 01 berangkat dari wanci ke kendari?", "kapan kapal simba berangkat dari wanci ke kendari?","kapan kapal Simba 01 berangkat dari Kendari ke Wanci?", "kapan simba 01 berangkat?", "kapan simba berangkat?","kapan kapal simba berangkat?"],
-        "responses": ["kapal simba 01 adalah kapal yang memiliki rute perjalanan wanci ke kendari. kapal Simba 01 berangkat pada hari rabu dari wanci ke kendari, kapal Simba 01 berangkat pada hari kamis dari kendari ke wanci. jam keberangkatan kapal simba 01 yaotu pada jam 09:00 WITA "]
-    },
-    {"tag": "jadwal simba 01",
-        "patterns": ["jam berapa kapal Simba berangkat?", "jam berapa kapal Simba berangkat ke kendari?", "jam berapa kapal Simba berangkat ke wanci?", "jam berapa kapal Simba 01 berangkat dari Wanci ke Kendari?", "jam berapa kapal Simba 01 berangkat dari Kendari ke Wanci?", "jam berapa kapal Simba 01 berangkat?"],
-        "responses": ["kapal Simba 01 berangkat pada jam 09:00 WITA dari wanci ke kendari, dan kapal Simba 01 berangkat pada jam 09:00 WITA dari kendari ke wanci "]
-    },
-    {"tag": "Aksar Saputra 09",
-        "patterns": ["informasi aksar saputra 09", "aksar saputra 09", "aksar 09", "aksar saputra 9", "aksar 9", "informasi aksar 9", " informasi aksar saputra 9", "informasi kapal aksar saputra 09", "informasi aksar saputra 9", "informasi kapal aksar saputra 9"],
-        "responses": ["Aksar Saputra 09 adalah kapal yang saat ini memiliki rute perjalanan dari manado, ternate, sanana, dofa, fala."]
-    },
-    {"tag": "jadwal aksar saputra 09",
-        "patterns": ["kapan kapal aksar saputra 09 berangkat?", "kapan kapal aksar saputra 9 berangkat?", "kapan kapal aksar 09 berangkat?", "kapan kapal aksar 9 berangkat?","kapan aksar 9 berangkat?","kapan kapal aksar saputra 09 berangkat dari Ternate ke manado?", "kapan kapal aksar saputra 09 berangkat dari Ternate ke sanana?", " kapan kapal aksar saputra 09 berangkat dari sanana ke fala?", "jadwal kapal aksar saputra 09", "jadwal kapal aksar saputra 9", "kapan aksar saputra 09 berangkat?", "kapan aksar saputra 9 berangkat?", "kapan aksar 09 berangkat?", "kapan aksar 9 berangkat?"],
-        "responses": ["kapal aksar saputra 09 berangkat dari Ternate setiap hari minggu dan rabu. dimana hari rabu dan minggu memiliki rutenya perjalanan yang berbeda,  kapal aksar saputra 09 berangkat dari ternate ke manado pada hari rabu di pelabuhan ahmad yani ternate, kapal aksar saputra 09 berangkat dari ternate ke sanana yaitu pada hari minggu dari pelabuhan ahmad yani ternate, kapal aksar saputra 09 berangkat dari sanana ke fala pada hari minggu dari pelabuhan sanana"]
-    },
-    {"tag": "tiket kapal aksar saputra 09",
-        "patterns": ["berapa harga tiket kapal aksar saputra 09?", "berapa harga tiket kapal aksar saputra 09 dari ternate ke sanana?", " harga tiket kapal aksar saputra 09 berapa dari ternate ke manado?", "tiket kapal aksar saputra 09 harganya berapa dari ternate ke dofa?", "harga tiket manado" ,"harga tiket kapal manado", "harga tiket sanana", "berapa harga tiket sanana?","harga tiket kapal sanana","harga tiket fala", "berapa harga tiket fala", "harga tiket kapal fala", "harga tiket dofa", "harga tiket kapal dofa", "berapa harga tiket dofa?"],
-        "responses": ["harga tiket kapal aksar saputra 09 yaitu ternate ke sanana Rp.365.000, ternate ke dofa Rp.385.000, ternate ke fala Rp.385.000, ternate ke manado Rp.450.000"]
-    },
-    {"tag": "pesan tiket aksar saputra 09",
-        "patterns": ["bagaimana cara pesan tiket kapal aksar 09","bagaimana cara saya mendapatkan tiket kapal aksar 09?"],
-        "responses": ["untuk memesan tiket kapal aksar saputra 09 dapat dilakukan di loket tiket yang berlokasi di mangga dua, dan anda juga bisa membelinya secara online melalui situs web FERINESIA.COM"]
-    },
-    {"tag": "batalkan tiket kapal aksar saputra 09",
-        "patterns": ["batalkan tiket kapal aksar saputra 09", "bagaimana cara membatalkan tiket kapal aksar saputra 09?", " apakah saya bisa membatalkan tiket kapal yang sudah saya pesan?"],
-        "responses": ["pembatalan tiket kapal aksar saputra 09 dapat dilakukan di loket tiket kapal yang berlokasi di mangga dua atau jika anda membeli tiket secara online"]
-    },
-    {"tag": "pengiriman barang kapal aksar saputra 09",
-        "patterns": ["apakah saya bisa mengirim barang dengan kapal aksar saputra 09?", "bagaiamana cara mengirim barang di kapal aksar saputra 09?", "apakah bisa mengirim barang di kapal aksar saputra 09?", "berapa biayaa pengiriman barang di kapal aksar saputra 09?"],
-        "responses": ["ya, anda bisa mengirim barang dengan kapal ini, anda bisa mengecek tempat pengiriman barangnya di dek-dek kapal. biaya pengiriman mulai dari harga Rp.10.000 hinga keatas sesuai dengan jenis barangnya"] 
-    },
-    {"tag": "waktu kedatangan aksar saputra 09",
-        "patterns": ["kapan kapal aksar saputra 09 tiba di sanana?", "kapan kapal aksar saputra 9 tiba di sanana?", "kapan kapal aksar 09 tiba di sanana?", "kapan kapal aksar 9 tiba di sanana?", "jam berapa kapal aksar saputra 09 akan sampai di pelabuhan sanana?", "jam berapa kapal aksar saputra 9 akan sampai di pelabuhan sanana?", "jam berapa kapal aksar 9 akan sampai di pelabuhan sanana?", "jam berapa aksar 9 akan sampai di pelabuhan sanana?"],
-        "responses": ["kapal anda diperkirakan tiba di pelabuhan sanana jika dari ternate yaitu pada hari senin, kurang lebih jam 10.00 WIT, jika kapal aksar saputra 09 dari fala dan dofa maka diperkirakan tiba di sanana hari senin jam 11.00 WIT"]
-    },
-    {"tag": "makanan di kapal aksar saputra 09",
-        "patterns": ["makanan apa saja yang tersedia di kapal aksar saputra 09?", "makanan apa saja yang tersedia di kapal aksar saputra 9?", "makanan apa saja yang tersedia di kapal aksar 9?", "makanan apa saja yang tersedia di aksar saputra 09?", "makanan apa saja yang tersedia di aksar 9", "apakah bisa memesan makanan di kapal aksar saputra 09?", "apakah bisa memesan makanan di kapal aksar saputra 9?", "apakah bisa memesan makanan di kapal aksar 09?", "apakah bisa memesan makanan di kapal aksar 9?", "apakah bisa memesan makanan di aksar saputra 9?"],
-        "responses": ["kapal aksar saputra 09 menyediakan makanan berat misalkan nasi kotak dan aqua gelas bagi penumpang. ada juga pilihan lain untuk memesan makanan di kantin kapal"]
-    },
-    {"tag": "minuman di kapal aksar saputra 09",
-        "patterns": ["minuman apa saja yang tersedia di kapal aksar saputra 09?", "minuman di kapal aksar saputra 09", "minuman di kapal aksar saputra 9", "minuman di kapal aksar 9", "minuman di kapal aksar 09", "minuman di aksar saputra 09", "minuman di aksar saputra 9", "minuman di aksar 09"],
-        "responses": ["minuman yang tersedia di kapal aksar saputra 09 adalah berbagai minuman yang dapat dipesan melalui kantin kapal, misalkan minuman dingin dan minuman hangat. anda bisa sambil nyantai di dek 3 kapal bagian belakang dengan menghirup udara segar"]
-    },
-    {"tag": "prosedur naik kapal aksar saputra 09",
-        "patterns": ["apa yang harus dilakukan saat naik kapal aksar saputra 09?", "bagaiamana proses boarding kapal aksar saputra 09?", "apa yang perlu disiapkan saat naik kapal aksar saputra 09?"],
-        "responses": ["saat naik kapal, pastikan anda sudah mempersiapkan tiket dan kartu identias anda yang sesuai untuk diperiksa oleh petugas. "]
-    }, 
-    {"tag": "kontak darurat aksar saputra 09",
-        "patterns": ["bagaimana cara menghubungi kontak darurat di kapal aksar saputra 09?", " apakah ada nomor kontak darurat di kapal aksar saputra 09?", "kontak darurat aksar saputra 09"],
-        "responses": ["untuk menghubungi kontak darurat kapal aksar saputra 09, anda dapat menghubungi nomor 082290667123"]
-    },
-    {"tag": "masa berlaku tiket kapal",
-        "patterns": ["bagaimana jika saya tidak jadi berangkat, apakah tiket masih berlaku?", " masa berlaku tiket"],
-        "responses": ["masa berlaku tiket  kapal anda sesuai dengan tanggal dan waktu keberangkatan yang tertera di tiket, jika tidak jadi berangkat maka tiket yang telah dipesan dinyatakan hangus, terkecuali anda melakukan reschedule ke loket tiket kapal tapi dengan syarat melakukan reschedule keberangkatan dengan menggunakan kapal yang sama"]
-    },
-    {"tag": "barang hilang di kapal",
-        "patterns": ["apa yang harus saya lakukan jika barang saya hilang di kapal?", " bagaimana cara melaporkan barang hilang di kapal?", " siapa yang saya bisa hubungi jika barang saya hilang di kapal?"],
-        "responses": ["jika anda kehilangan barang di kapal, segera laporkan ke kru kapal atau abk kapal atau ke pusat informasi di kapal"]
-    },
-    {"tag": "pembatalan keberangkatan",
-        "patterns": ["bagaimana cara membatalkan keberangkatan kapal saya?", "apa syarat untuk membatalkan tiket kapal?"],
-        "responses": ["untuk membatalkan keberangkatan anda, anda bisa pergi ke loket tiket tempat anda membeli tiket agar bisa dibatalkan sebelum kapal berangkat"]
-    },
-    {"tag": "Aksar Saputra 23",
-        "patterns": ["informasi aksar saputra 23", "aksar saputra 23"],
-        "responses": ["Aksar Saputra 23 adalah kapal yang saat ini memiliki rute perjalanan dari manado, dama, tobelo, morotai."]
-    },
-    {"tag": "jadwal aksar saputra 23",
-        "patterns": ["kapan kapal aksar saputra 23 berangkat?", "kapan kapal aksar 23 berangkat dari morotai ke manado?", "kapan kapal aksar 23 berangkat dari tobelo ke morotai?"],
-        "responses": ["kapal aksar saputra 23 berangkat dari manado setiap hari jumat. dimana memiliki rute manado-dama-tobelo-morotai, dan kapal aksar saputra 23 berangkat dari tobelo ke morotai pada hari sabtu jam 1 siang di pelabuhan tobelo"]
-    },
-    {"tag": "tiket kapal aksar saputra 23",
-        "patterns": ["berapa harga tiket kapal aksar saputra 23?", "berapa harga tiket kapal aksar saputra 23 dari tobelo ke morotai?", " harga tiket kapal aksar saputra 23 berapa dari manado ke dama?", "tiket kapal aksar saputra 23 harganya berapa dari manado ke morotai?", "harga tiket kapal aksar 23", "harga tiket kapal aksar saputra 23", "harga tiket aksar saputra 23"],
-        "responses": ["harga tiket kapal aksar saputra 23 yaitu manado ke dama Rp.400.000, tobelo ke morotai Rp.100.000, manado ke morotai Rp 500.000, dama ke tobelo Rp.100.000"]
-    },
-    {"tag": "pesan tiket aksar saputra 23",
-        "patterns": ["bagaimana cara pesan tiket kapal aksar saputra 23","bagaimana cara saya mendapatkan tiket kapal aksar saputra 23?", "cara pesan tiket aksar saputra 23", "cara pesan tiket kapal aksar saputra 23", "cara pesan tiket kapal aksar 23", "cara pesan tiket aksar 23"],
-        "responses": ["untuk memesan tiket kapal aksar saputra 23 dapat dilakukan di loket tiket yang berlokasi di mangga dua, dan anda juga bisa membelinya secara online melalui situs web FERINESIA.COM"]
-    },
-    {"tag": "batalkan tiket kapal aksar saputra 23",
-        "patterns": ["batalkan tiket kapal aksar saputra 23", "bagaimana cara membatalkan tiket kapal aksar saputra 23?", " apakah saya bisa membatalkan tiket kapal yang sudah saya pesan?"],
-        "responses": ["pembatalan tiket kapal aksar saputra 23 dapat dilakukan di loket tiket kapal yang berlokasi di mangga dua atau jika anda membeli tiket secara online."]
-    },
-    {"tag": "pengiriman barang kapal aksar saputra 23",
-        "patterns": ["apakah saya bisa mengirim barang dengan kapal aksar saputra 23?", "bagaiamana cara mengirim barang di kapal aksar saputra 23?", "apakah bisa mengirim barang di kapal aksar saputra 23?", "berapa biaya pengiriman barang di kapal aksar saputra 23?"],
-        "responses": ["ya, anda bisa mengirim barang dengan kapal ini, anda bisa mengecek tempat pengiriman barangnya di dek-dek kapal. biaya pengiriman mulai dari harga Rp.10.000 hinga keatas sesuai dengan jenis barangnya"] 
-    },
-    {"tag": "waktu kedatangan aksar saputra 23",
-        "patterns": ["kapan kapal aksar saputra 23 tiba di dama?", "jam berapa kapal aksar saputra 23 akan sampai di pelabuhan morotai?"],
-        "responses": ["kapal anda diperkirakan tiba di pelabuhan dama jika dari manado yaitu pada hari sabut, kurang lebih jam 08.00 WIT, jika kapal aksar saputra 23 dari tobelo,  maka diperkirakan tiba di dama hari selasa jam 17.00 WIT."]
-    },
-    {"tag": "makanan di kapal aksar saputra 23",
-        "patterns": ["makanan apa saja yang tersedia di kapal aksar saputra 23?", "apakah bisa memesan makanan di kapal aksar saputra 23?" ],
-        "responses": ["kapal aksar saputra 23 menyediakan makanan berat misalkan nasi kotak dan aqua gelas bagi penumpang. ada juga pilihan lain untuk memesan makanan di kantin kapal"]
-    },
-    {"tag": "minuman di kapal aksar saputra 23",
-        "patterns": ["minuman apa saja yang tersedia di kapal aksar saputra 23?", "minuman di kapal aksar saputra 23"],
-        "responses": ["minuman yang tersedia di kapal aksar saputra 23 adalah berbagai minuman yang dapat dipesan melalui kantin kapal, misalkan minuman dingin dan minuman hangat. anda bisa sambil nyantai di dek 3 kapal bagian belakang dengan menghirup udara segar"]
-    },
-    {"tag": "prosedur naik kapal aksar saputra 23",
-        "patterns": ["apa yang harus dilakukan saat naik kapal aksar saputra 23?", "bagaiamana proses boarding kapal aksar saputra 23?", "apa yang perlu disiapkan saat naik kapal aksar saputra 23?"],
-        "responses": ["saat naik kapal, pastikan anda sudah mempersiapkan tiket dan kartu identias anda yang sesuai untuk diperiksa oleh petugas. "]
-    }, 
-    {"tag": "kontak darurat aksar saputra 23",
-        "patterns": ["bagaimana cara menghubungi kontak darurat di kapal aksar saputra 23?", "apakah ada nomor kontak darurat di kapal aksar saputra 23?", "kontak darurat aksar saputra 23"],
-        "responses": ["untuk menghubungi kontak darurat kapal aksar saputra 23, anda dapat menghubungi nomor 082290667123"]
-    },
-    {"tag": "Aksar Saputra 08",
-        "patterns": ["informasi aksar saputra 08", "aksar saputra 08"],
-        "responses": ["Aksar Saputra 08 adalah kapal yang saat ini memiliki rute perjalanan dari kendari ke raha atau sebaliknya"]
-    },
-    {"tag": "jadwal aksar saputra 08",
-        "patterns": ["kapan kapal aksar saputra 08 berangkat?", "kapan kapal aksar saputra 08 berangkat dari kendari ke raha?", "kapan kapal aksar saputra 08 berangkat dari kendari ke raha?", "jadwal kapal aksar saputra 08"],
-        "responses": ["kapal aksar saputra 08 berangkat dari kendari ke raha setiap hari jumat, tetapi akan berubah sesuai dengan rute len perjalannya. biasanya 2 malam setelah berangkat. kapal aksar saputra 08 akan kembali berangkat ke dari asal ke tujuan"]
-    },
-    {"tag": "tiket kapal aksar saputra 08",
-        "patterns": ["berapa harga tiket kapal aksar saputra 08?", "berapa harga tiket kapal aksar saputra 08 dari kendari ke raha?", " harga tiket kapal aksar saputra 08 berapa dari raha ke kendari?", "tiket kapal aksar saputra 08 harganya berapa dari kendari ke raha?", "harga tiket kapal raha", "berapa harga tiket raha", "berapa harga tiket kapal raha"],
-        "responses": ["harga tiket kapal aksar saputra 08 dari kendari ke raha yaitu Rp.145.000, begitupun dengan raha ke kendari"]
-    },
-    {"tag": "pesan tiket aksar saputra 08",
-        "patterns": ["bagaimana cara pesan tiket kapal aksar saputra 08","bagaimana cara saya mendapatkan tiket kapal aksar saputra 08?", "cara pesan tiket aksar saputra 08", "cara pesan tiket kapal aksar saputra 08", "cara pesan tiket kapal aksar 08", "cara pesan tiket aksar 08", "cara pesan tiket kapal aksar 8", "cara pesan tiket aksar 8", "cara pesan tiket kapal aksar saputra 8"],
-        "responses": ["untuk memesan tiket kapal aksar saputra 08 dapat dilakukan di loket tiket yang berlokasi di pelabuhan kapal wanci di kendari, sulawesi tenggara"]
-    },
-    {"tag": "batalkan tiket kapal aksar saputra 08",
-        "patterns": ["batalkan tiket kapal aksar saputra 08", "bagaimana cara membatalkan tiket kapal aksar saputra 08?"],
-        "responses": ["pembatalan tiket kapal aksar saputra 08 dapat dilakukan di loket tiket kapal yang berlokasi di pelabuhan kapal wanci di kendari, sulawesi tenggara."]
-    },
-    {"tag": "pengiriman barang kapal aksar saputra 08",
-        "patterns": ["apakah saya bisa mengirim barang dengan kapal aksar saputra 08?", "bagaiamana cara mengirim barang di kapal aksar saputra 08?", "apakah bisa mengirim barang di kapal aksar saputra 08?", "berapa biaya pengiriman barang di kapal aksar saputra 08?"],
-        "responses": ["ya, anda bisa mengirim barang dengan kapal aksar saputra 08, anda bisa mengecek tempat pengiriman barangnya di dek-dek kapal. biaya pengiriman mulai dari harga Rp.10.000 hinga keatas sesuai dengan jenis barangnya"] 
-    },
-    {"tag": "waktu kedatangan aksar saputra 08",
-        "patterns": ["kapan kapal aksar saputra 08 tiba di raha?", "jam berapa kapal aksar saputra 08 akan sampai di kendari?"],
-        "responses": ["kapal aksar saputra 08 diperkirakan waktu tiba dari kendari ke raha pada jam 05:00 WITA. jika kapal aksar saputra 08 dari raha maka diperkirakan tiba di kendari kurang lebih jam 05:00 WITA"]
-    },
-    {"tag": "makanan di kapal aksar saputra 08",
-        "patterns": ["makanan apa saja yang tersedia di kapal aksar saputra 08?", "apakah bisa memesan makanan di kapal aksar saputra 08?" ],
-        "responses": ["kapal aksar saputra 08 menyediakan makanan di kantin kapal"]
-    },
-    {"tag": "minuman di kapal aksar saputra 08",
-        "patterns": ["minuman apa saja yang tersedia di kapal aksar saputra 08?", "minuman di kapal aksar saputra 08"],
-        "responses": ["minuman yang tersedia di kapal aksar saputra 08 adalah berbagai minuman yang dapat dipesan melalui kantin kapal, misalkan minuman dingin dan minuman hangat. anda bisa sambil nyantai di dek 3 kapal bagian belakang dengan menghirup udara segar"]
-    },
-    {"tag": "prosedur naik kapal aksar saputra 08",
-        "patterns": ["apa yang harus dilakukan saat naik kapal aksar saputra 08?", "bagaiamana proses boarding kapal aksar saputra 08?", "apa yang perlu disiapkan saat naik kapal aksar saputra 08?"],
-        "responses": ["saat naik kapal, pastikan anda sudah mempersiapkan tiket dan kartu identias anda yang sesuai untuk diperiksa oleh petugas. "]
-    }, 
-    {"tag": "kontak darurat aksar saputra 08",
-        "patterns": ["bagaimana cara menghubungi kontak darurat di kapal aksar saputra 08?", " apakah ada nomor kontak darurat di kapal aksar saputra 08?", "kontak darurat aksar saputra 08"],
-        "responses": ["untuk menghubungi kontak darurat kapal aksar saputra 08, anda dapat menghubungi nomor 082290667123"]
-    },
-    {"tag": "Bunda Maria",
-        "patterns": ["informasi Bunda Maria", "Bunda Maria"],
-        "responses": ["Bunda Maria adalah kapal yang saat ini memiliki rute perjalanan dari bacan ke ternate atau sebaliknya"]
-    },
-    {"tag": "jadwal Bunda Maria",
-        "patterns": ["kapan kapal Bunda Maria berangkat?", "kapan Bunda Maria berangkat dari ternate ke bacan?", "kapan kapal Bunda Maria berangkat dari bacan ke ternate?", "jadwal bunda maria"],
-        "responses": ["kapal Bunda Maria berangkat dari ternate ke bacan tergantung dari jadwal kapalnya, karena jadwal kapalnya berubah-ubah sesuai dengan rute len perjalannya. biasanya kapal bunda maria berangkat tiap 4 malam dihitung setelah tiba di bacan dari ternate. kapal Bunda Maria akan kembali berangkat dari asal ke tujuan"]
-    },
-    {"tag": "tiket kapal Bunda Maria",
-        "patterns": ["berapa harga tiket kapal Bunda Maria?", "berapa harga tiket kapal Bunda Maria dari ternate ke bacan?", " harga tiket kapal Bunda Maria berapa dari bacan ke ternate?", "tiket kapal Bunda Maria harganya berapa dari ternate ke bacan?", "tiket kapal bunda maria", "harga tiket bunda maria", "harga tiket kapal bunda maria"],
-        "responses": ["harga tiket kapal Bunda Maria dari ternate ke bacan yaitu Rp.165.000, begitupun dengan bacan ke ternate"]
-    },
-    {"tag": "pesan tiket Bunda Maria",
-        "patterns": ["bagaimana cara pesan tiket kapal Bunda Maria","bagaimana cara saya mendapatkan tiket kapal Bunda Maria?", "cara pesan bunda maria", "cara pesan tiket kapal bunda maria", "cara pesan tiket kapal bunda maria", "cara pesan tiket bunda maria"],
-        "responses": ["untuk memesan tiket kapal Bunda Maria dapat dilakukan di loket tiket yang berlokasi di mangga dua"]
-    },
-    {"tag": "batalkan tiket kapal Bunda Maria",
-        "patterns": ["batalkan tiket kapal Bunda Maria", "bagaimana cara membatalkan tiket kapal Bunda Maria?"],
-        "responses": ["pembatalan tiket kapal Bunda Maria dapat dilakukan di loket tiket kapal yang berlokasi di mangga dua."]
-    },
-    {"tag": "pengiriman barang kapal Bunda Maria",
-        "patterns": ["apakah saya bisa mengirim barang dengan kapal Bunda Maria?", "bagaiamana cara mengirim barang di kapal Bunda Maria?", "apakah bisa mengirim barang di kapal Bunda Maria?", "berapa biaya pengiriman barang di kapal Bunda Maria?"],
-        "responses": ["ya, anda bisa mengirim barang dengan kapal Bunda Maria, anda bisa mengecek tempat pengiriman barangnya di dek-dek kapal. biaya pengiriman mulai dari harga Rp.10.000 hinga keatas sesuai dengan jenis barangnya"] 
-    },
-    {"tag": "waktu kedatangan Bunda Maria",
-        "patterns": ["kapan kapal Bunda Maria tiba di ternate?", "jam berapa kapal Bunda Maria akan sampai di ternate?"],
-        "responses": ["kapal Bunda Maria diperkirakan waktu tiba dari bacan ke ternate pada jam 05:00 WIT. jika kapal Bunda Maria dari ternate maka diperkirakan tiba di bacan kurang lebih jam 05:00 WIT"]
-    },
-    {"tag": "makanan di kapal Bunda Maria",
-        "patterns": ["makanan apa saja yang tersedia di kapal Bunda Maria?", "apakah bisa memesan makanan di kapal Bunda Maria?" ],
-        "responses": ["kapal Bunda Maria menyediakan makanan di kantin kapal"]
-    },
-    {"tag": "minuman di kapal Bunda Maria",
-        "patterns": ["minuman apa saja yang tersedia di kapal Bunda Maria?", "minuman di kapal Bunda Maria"],
-        "responses": ["minuman yang tersedia di kapal Bunda Maria adalah berbagai minuman yang dapat dipesan melalui kantin kapal, misalkan minuman dingin dan minuman hangat. anda bisa sambil nyantai di dek 3 kapal bagian belakang dengan menghirup udara segar"]
-    },
-    {"tag": "prosedur naik kapal Bunda Maria",
-        "patterns": ["apa yang harus dilakukan saat naik kapal Bunda Maria?", "bagaiamana proses boarding kapal Bunda Maria?", "apa yang perlu disiapkan saat naik kapal Bunda Maria?"],
-        "responses": ["saat naik kapal, pastikan anda sudah mempersiapkan tiket dan kartu identias anda yang sesuai untuk diperiksa oleh petugas. "]
-    }, 
-    {"tag": "kontak darurat Bunda Maria",
-        "patterns": ["bagaimana cara menghubungi kontak darurat di kapal Bunda Maria?", " apakah ada nomor kontak darurat di kapal Bunda Maria?", "kontak darurat Bunda Maria"],
-        "responses": ["untuk menghubungi kontak darurat kapal Bunda Maria, anda dapat menghubungi nomor 082290667123"]
-    },
-    {"tag": "perjalanan ternate sanana",
-    "patterns": ["kapal apa yang memiliki rute perjalanan ternate sanana?","rute kapal ternate sanana", "rute kapal sanana ternate"],
-    "responses": ["kapal yang tersedia saat ini untuk rute perjalanan ternate sanana yaitu kapal aksar saputra 09"]
-    },
-    {"tag": "kapal kendari",
-    "patterns": ["kapal apa yang berangkat hari rabu?"],
-    "responses": ["kapal simba 01 berangkat hari rabu"]
-    },
-    {"tag": "rute aksar saputra 09",
-    "patterns": ["rute perjalanan aksar saputra 09"],
-    "responses": ["rute perjalanan yang dimiliki kapal aksar saputra 09 yaitu dari manado ke ternate, lalu ternate ke sanana, sanana ke dofa, dofa ke fala. kemudian balik lagi dari fala ke dofa, dofa ke sanana, sanana ke ternate dan terakhir ternate ke manado"]
-    },
-    {"tag": "rute aksar saputra 08",
-    "patterns": ["rute perjalanan aksar saputra 08"],
-    "responses": ["rute perjalanan yangn dimiliki kapal aksar saputra 08 yaitu dari kendari ke raha maupun raha ke kendari"]
-    },
-    {"tag": "ternate sanana",
-    "patterns": ["kapal apa yang berangkat dari ternate ke sanana?"],
-    "responses": ["saat ini kapal yang berangkat dari ternate ke sanana yaitu kapal aksar saputra 09"]
-    },
-    {"tag": "jadwal aksar 23",
-    "patterns": ["jadwal kapal aksar saputra 23", "jadwal aksar 23", "jadwal aksar saputra 23", "jam berapa kapal aksar 23 berangkat?", "jam berapa aksar 23 berangkat?", "jam berapa kapal aksar saputra 23 berangkat?", "jam berapa akasr saputra 23 berangkat"],
-    "responses": ["jadwal aksar saputra 23 berangkat dari manado setiap hari jumat. dimana memiliki rute manado-dama-tobelo-morotai, dan kapal aksar saputra 23 berangkat dari tobelo ke morotai pada hari sabtu jam 1 siang di pelabuhan tobelo"]
-    },
-    {"tag": "jadwal aksar 09",
-    "patterns": ["jadwal kapal aksar saputra 09", "jadwal aksar 09", "jadwal aksar saputra 09", "jadwal aksar 9", "jadwal aksar saputra 9", "jadwal kapal aksar saputra 09", "jadwal kapal aksar 9", "jam berapa kapal aksar 09 berangkat?", "jam berapa aksar 9 berangkat?", "jam berapa kapal aksar saputra 09 berangkat?", "jam berapa akasr saputra 9 berangkat"],
-    "responses": ["kapal aksar saputra 09 berangkat dari Ternate setiap hari minggu dan rabu pada jam 17:00/18:00 WIT. dimana hari rabu dan minggu memiliki rutenya perjalanan yang berbeda, kapal aksar saputra 09 berangkat dari ternate ke manado pada hari rabu di pelabuhan ahmad yani ternate, kapal aksar saputra 09 berangkat dari ternate ke sanana yaitu pada hari minggu dari pelabuhan ahmad yani ternate, kapal aksar saputra 09 berangkat dari sanana ke fala pada hari minggu dari pelabuhan sanana"]
-    },
-    {"tag": "jadwal aksar 08",
-    "patterns": ["jadwal kapal aksar saputra 08", "jadwal aksar 08", "jadwal aksar saputra 08", "jadwal aksar 8", "jadwal aksar saputra 8", "jadwal kapal aksar saputra 8", "jadwal kapal aksar 8", "jam berapa kapal aksar 08 berangkat?", "jam berapa aksar 8 berangkat?", "jam berapa kapal aksar saputra 08 berangkat?", "jam berapa akasr saputra 8 berangkat"],
-    "responses": ["kapal aksar saputra 08 berangkat dari kendari ke raha setiap hari jumat pada jam 21:00/22:00 WITA, tetapi akan berubah sesuai dengan rute len perjalannya. biasanya 2 malam setelah berangkat. kapal aksar saputra 08 akan kembali berangkat ke dari asal ke tujuan"]
-    },
-    {"tag": "jadwal kapal simba 01",
-    "patterns": ["jadwal kapal simba 01", "jadwal kapal simba", "jadwal kapal simba 1", "informasi kapal simba", "informasi kapal simba 01", "informasi kapal simba", "jadwal simba", "jadwal simba 01"],
-    "responses": ["kapal simba 01 adalah kapal yang memiliki rute perjalanan wanci ke kendari. kapal Simba 01 berangkat pada hari rabu dari wanci ke kendari, kapal Simba 01 berangkat pada hari kamis dari kendari ke wanci. jam keberangkatan kapal simba 01 yaitu pada jam 09:00 WITA", "jam berapa kapal simba 01 berangkat?", "jam berapa simba berangkat?", "jam berapa kapal simba berangkat?"]
-    },
-    {"tag": "jadwal Napoleon 777",
-    "patterns": ["jadwal kapal Napoleon 777", "jadwal kapal Napoleon", "jadwal Napoleon", "informasi kapal Napoleon", "informasi kapal Napoleon 777", "informasi kapal Napoleon", "informasi Napoleon 777", "informasi napoleon", "jadwal napoleon", "jadwal napoleon 777", "jam berapa napoleon berangkat?", "jam berapa kapal napoleon 777 berangkat?"," jam berapa kapal napoleon berangkat?"],
-    "responses": ["kapal Napoleon 777 adalah kapal yang memiliki rute perjalanan kendari dan wanci. dimana berangkat pada hari selasa dari wanci ke kendari dan berangkat pada hari rabu dari kendari pada jam 09:00 WITA"]
-    },
-    {"tag": "jadwal aksar saputra",
-    "patterns": ["jadwal kapal aksar saputra", "jadwal aksar saputra", "jadwal aksar", "informasi kapal aksar", "informasi kapal aksar saputra", "informasi aksar saputra", "kapal aksar", "aksar saputra"],
-    "responses":["ada beberapa jadwal kapal Aksar Saputra diantaranya yaitu kapal Aksar Saputra 09, Aksar Saputra 08 dan Aksar Saputra 23. kapal Aksar Saputra 09 berangkat dari Ternate setiap hari minggu dan rabu. dimana hari rabu dan minggu memiliki rutenya perjalanan yang berbeda, kapal Aksar Saputra 09 berangkat dari ternate ke manado pada hari rabu di pelabuhan ahmad yani ternate, kapal Aksar Saputra 09 berangkat dari ternate ke sanana yaitu pada hari minggu dari pelabuhan ahmad yani ternate, kapal Aksar Saputra 09 berangkat dari sanana ke fala pada hari minggu dari pelabuhan sanana. kapal Aksar Saputra 08 berangkat dari kendari ke raha setiap hari jumat, tetapi akan berubah sesuai dengan rute len perjalannya. biasanya 2 malam setelah berangkat. kapal Aksar Saputra 08 akan kembali berangkat ke dari asal ke tujuan. Kapal Aksar Saputra 23 berangkat dari manado setiap hari jumat. dimana memiliki rute manado-dama-tobelo-morotai, dan kapal Aksar Saputra 23 berangkat dari tobelo ke morotai pada hari sabtu jam 1 siang di pelabuhan tobelo"]
-    },
-    {"tag": "rute aksar saputra 23",
-    "patterns": ["rute perjalanan aksar saputra 23", "rute kapal aksar saputra 23", "rute aksar saputra 23"],
-    "responses":["rute perjalanan yang dimiliki kapal aksar saputra 23 yaitu manado, dama, tobelo, morotai"]
-    },
-    {"tag": "pesan tiket aksar saputra ",
-        "patterns": ["bagaimana cara pesan tiket kapal aksar saputra?","bagaimana cara saya mendapatkan tiket kapal aksar saputra?", "cara pesan tiket kapal aksar", "cara pesan tiket aksar saputra", "tiket kapal aksar saputra","cara pesan tiket aksar"],
-        "responses": ["Harga tiket kapal aksar saputra berbeda beda karena sesuai rute perjalanan yang dimiliki kapal tersebut. Diinformasikan untuk memesan tiket kapal aksar saputra dapat dilakukan di loket tiket yang berlokasi di mangga dua, dan anda juga bisa membelinya secara online melalui situs web FERINESIA.COM"]
-    },
-    {"tag": "pesan tiket simba 01 ",
-        "patterns": ["bagaimana cara pesan tiket kapal simba 01?", "bagaimana cara pesan tiket kapal simba?", "bagaimana cara saya mendapatkan tiket kapal simba?", "cara pesan tiket kapal simba", "cara pesan tiket simba 01", "tiket kapal simba 01","cara pesan tiket simba", "tiket kapal simba"],
-        "responses": ["pemesanan tiket kapal simba 01 dilakukan di loket penjualan tiket di pelabuhan wanci jika dari wanci dan di pelabuhan kapal wanci di kendari jika berangkat dari kendari. Pembelian tiket dapat dilakukan 1 hari sebelum keberangkatan."]
-    },
-    {"tag": "pesan tiket Napoleon 777 ",
-    "patterns": ["bagaimana cara pesan tiket kapal Napoleon 777?", "bagaimana cara pesan tiket kapal Napoleon?", "bagaimana cara saya mendapatkan tiket kapal Napoleon 777?", "cara pesan tiket kapal Napoleon 777", "cara pesan tiket Napoleon", "tiket kapal Napoleon 777","cara pesan tiket Napoleon", "tiket kapal Napoleon"],
-    "responses": ["pemesanan tiket kapal Napoleon 777 dilakukan di loket penjualan tiket di pelabuhan wanci jika dari wanci dan di pelabuhan kapal wanci di kendari jika berangkat dari kendari. Pembelian tiket dapat dilakukan 1 hari sebelum keberangkatan."]
-    },
-    {"tag": "harga tiket kapal aksar ",
-    "patterns": ["harga tiket kapal aksar", "harga tiket kapal aksar saputra", "berapa harga tiket kapal aksar", "berapa harga tiket kapal aksar saputra", "harga tiket aksar saputra", "berapa harga tiket aksar", "berapa harga tiket aksar", "tiket kapal", "harga tiket", "tiket aksar"],
-    "responses": ["harga tiket kapal aksar saputra 09 pada rute ternate-sanana yaitu Rp.370.000, Ternate-fala yaitu Rp.480.000, ternate-dofa Rp.390.000, ternate-manado Rp. 365.000 per tiket ekonomi/di ranjang tidur. sedangkan tersedia kamar juga dengan harga tiketnya Rp.250.000 per orang untuk sewa kamar. harga tiket kapal aksar saputra 08 pada rute Kendari-Raha(pp) yaitu Rp.145.000 sedangkan tersedia kamar juga dengan harga tiketnya Rp.200.000 per orang untuk sewa kamar. harga tiket kapal aksar saputra 23 yaitu manado ke dama Rp.400.000, tobelo ke morotai Rp.100.000, manado ke morotai Rp 500.000, dama ke tobelo Rp.100.000"]
-    },
-    {"tag": "harga tiket kapal simba 01 ",
-    "patterns": ["harga tiket kapal simba 01", "harga tiket kapal simba", "berapa harga tiket kapal simba 01", "berapa harga tiket kapal simba", "harga tiket simba 01", "berapa harga tiket simba", "berapa harga tiket simba 01", "tiket kapal simba 01", "harga tiket simba", "informasi tiket kapal simba 01", "informasi tiket simba 01"],
-    "responses": ["Harga tiket kapal simba 01 dari wanci ke kendari (pp) adalah Rp.220.000 perorang (dewasa) dan harga tiket kamar Rp.200.000 perorang"]
-    },
-    {"tag": "harga tiket kapal napoleon 777 ",
-    "patterns": ["harga tiket kapal napoleon 777", "harga tiket kapal napoleon", "berapa harga tiket kapal napoleon 777", "berapa harga tiket kapal napoleon", "harga tiket napoleon 777", "berapa harga tiket napoleon", "berapa harga tiket napoleon 777", "tiket kapal napoleon 777", "harga tiket napoleon","informasi tiket kapal napoleon 777"],
-    "responses": ["Harga tiket kapal napoleon 777 dari wanci ke kendari (pp) adalah Rp.220.000 perorang (dewasa) dan harga tiket kamar Rp.200.000 perorang"]
-    }, 
-    {"tag": "kapal wanci ",
-    "patterns": ["kapal wanci, kapal kendari"],
-    "responses": ["saat ini kapal yang tersedia rute wanci yaitu kapal Simba 01 dan Napoleon 777 dimana memiiki rute wanci-kendari(pp)"]
-    },
-    {"tag": "harga kamar kapal aksar",
-    "patterns": ["harga kamar kapal aksar" ,"harga kamar aksar", "informasi harga kamar kapal aksar", "informasi harga kamar aksar saputra", "informasi tiket kamar aksar", "informasi tiket kamar kapal aksar", "informasi harga tiket kamar aksar", "informasi tiket kamar kapal aksar","harga kamar kapal simba" ,"harga kamar simba 01", "informasi harga kamar kapal simba 01", "informasi harga kamar simba 01", "informasi tiket kamar simba 01", "informasi tiket kamar kapal simba 01", "informasi harga tiket kamar simba", "informasi tiket kamar kapal simba 01", "tiket kamar simba 01", "tikte kamar aksar saputra 09", "tiket kamar aksar saputra 08", "tiket kamar aksar saputra 23", "tiket kamar napoleon 777","harga kamar kapal", "informasi harga kamar", "harga kamar"],
-    "responses": ["saat ini kapal yang tersedia rute wanci yaitu kapal Simba 01 dan Napoleon 777 dimana memiiki rute wanci-kendari(pp) dengan harga kamar yaitu Rp.200.000 dan kapal aksar saputra 09, aksar saputra 08, dan aksar saputra 23 memiliki rute yag berbeda-beda tetapi memiliki harga tiket kamar yang sama yaitu Rp.250.000 perorang"]
-    },
-    {"tag": "jadwal kapal tiba",
-    "patterns": ["jadwal kapal tiba","kapal tiba"],
-    "responses": ["kapal aksar saputra 09 tiba di sanana hari senin pagi pada jam 08:00 WIT, tiba di fala jam 19:00 WIT dari sanana, tiba di ternate pada hari rabu jam 08:00 WIT di pelabuhan ahmad yani, kapal aksar saputra 08 tiba di raha jam 05:00 WITA, berangkat dari kendari jam 22:00 WITA begitupun dari raha dan kendari berangkat jam 22:00 WITA lalu tiba di kendari jam 05:00 WITA, kapal aksar saputra 23 berangkat dari manado hari jumat dan tiba di tobelo hari sabtu jam 08:00 WIT, lalu berangkat dari tobelo tujuan morotai pada jam 10:00 WIT dan tiba di morotai jam 19:00 WIT. lanjut berangkat dari morotai ke tobelo jam 15:00 WIT, kemudian tobelo ke dama pada jam 17:00, tiba di dama jam 18:00 WIT. kemudian berangkat di hari selasa jam 12:00 ke manado dan tiba jam 08:00 WIT, kapal napoleon 777 tiba dari kendari ke wanci pada hari rabu dan hari minggu pada jam 17:00/18:00 WITA, kapal napoelon 777 tiba dari wanci ke kendari pada hari selasa dan sabtu pada jam 17:00/18:00 WITA, kapal simba 01 tiba dari kendari pada hari kamis dan senin pada jam 17:00/18:00 WITA, kapal simba 01 tiba di wanci pada hari rabu dan minggu pada jam 17:00/18:00 WITA", "kapal simba 01 tiba di wanci pada hari kamis dan senin pada jam 17:00/18:00 WITA"]
-    },
-    {"tag": "aksar saputra 09 tiba",
-    "patterns": ["kapan aksar saputra 09 tiba di tenate?", "kapan aksar saputra 9 tiba di tenate?", "kapan aksar 09 tiba di tenate?", "kapan aksar 9 tiba di tenate?","kapan aksar saputra 09 tiba di fala?", "kapan aksar saputra 9 tiba di fala?", "kapan aksar 09 tiba di fala?", "kapan aksar 9 tiba di fala?", "kapan aksar 9 tiba di manado?", "kapan aksar saputra 09 tiba di manado?", "kapan aksar saputra 9 tiba di manado?", "kapan aksar 09 tiba di manado?" ],
-    "responses": ["kapal aksar saputra 09 tiba di sanana hari senin pagi pada jam 08:00 WIT, tiba di fala jam 19:00 WIT dari sanana, tiba di ternate pada hari rabu jam 08:00 WIT di pelabuhan ahmad yani, kapal aksar saputra 08 tiba di raha jam 05:00 WITA, berangkat dari kendari jam 22:00 WITA begitupun dari raha dan kendari berangkat jam 22:00 WITA lalu tiba di kendari jam 05:00 WITA, kapal aksar saputra 23 berangkat dari manado hari jumat dan tiba di tobelo hari sabtu jam 08:00 WIT, lalu berangkat dari tobelo tujuan morotai pada jam 10:00 WIT dan tiba di morotai jam 19:00 WIT. lanjut berangkat dari morotai ke tobelo jam 15:00 WIT, kemudian tobelo ke dama pada jam 17:00, tiba di dama jam 18:00 WIT. kemudian berangkat di hari selasa jam 12:00 ke manado dan tiba jam 08:00 WIT, kapal napoleon 777 tiba dari kendari ke wanci pada hari rabu dan hari minggu pada jam 17:00/18:00 WITA, kapal napoelon 777 tiba dari wanci ke kendari pada hari selasa dan sabtu pada jam 17:00/18:00 WITA, kapal simba 01 tiba dari kendari pada hari kamis dan senin pada jam 17:00/18:00 WITA, kapal simba 01 tiba di wanci pada hari rabu dan minggu pada jam 17:00/18:00 WITA", "kapal simba 01 tiba di wanci pada hari kamis dan senin pada jam 107:00/18:00 WITA"]
-    },
-    {"tag": "aksar saputra 08 tiba",
-    "patterns": ["kapan aksar saputra 08 tiba di kendari?", "kapan aksar saputra 8 tiba di kendari?", "kapan aksar 08 tiba di kendari?", "kapan aksar 8 tiba di kendari?" ],
-    "responses": ["kapal aksar saputra 08 tiba di raha jam 05:00 WITA dimana berangkat dari kendari jam 22:00 WITA begitupun dari raha dan kendari berangkat jam 22:00 WITA lalu tiba di kendari jam 05:00 WITA, kapal aksar saputra 23 berangkat dari manado hari jumat dan tiba di tobelo hari sabtu jam 08:00 WIT, lalu berangkat dari tobelo tujuan morotai pada jam 10:00 WIT dan tiba di morotai jam 19:00 WIT. lanjut berangkat dari morotai ke tobelo jam 15:00 WIT, kemudian tobelo ke dama pada jam 17:00, tiba di dama jam 18:00 WIT. kemudian berangkat di hari selasa jam 12:00 ke manado dan tiba jam 08:00 WIT, kapal napoleon 777 tiba dari kendari ke wanci pada hari rabu dan hari minggu pada jam 17:00/18:00 WITA, kapal napoelon 777 tiba dari wanci ke kendari pada hari selasa dan sabtu pada jam 17:00/18:00 WITA, kapal simba 01 tiba dari kendari pada hari kamis dan senin pada jam 17:00/18:00 WITA, kapal simba 01 tiba di wanci pada hari rabu dan minggu pada jam 17:00/18:00 WITA", "kapal simba 01 tiba di wanci pada hari kamis dan senin pada jam 107:00/18:00 WITA"]
-    },
-    {"tag": "aksar saputra 23 tiba",
-    "patterns": ["kapan aksar saputra 23 tiba di manado?", "kapan aksar saputra 23 tiba di manado?", "kapan aksar 23 tiba di manado?", "kapan aksar 23 tiba di tobelo?","kapan aksar saputra 23 tiba di tobelo?", "kapan aksar saputra 23 tiba di morotai?", "kapan aksar 23 tiba di morotai?", "kapan aksar 23 tiba di morotai?", "kapan aksar 23 tiba di dama?","kapan aksar 23 tiba di dama?"],
-    "responses": ["kapal aksar saputra 23 berangkat dari manado hari jumat dan tiba di tobelo hari sabtu jam 08:00 WIT, lalu berangkat dari tobelo tujuan morotai pada jam 10:00 WIT dan tiba di morotai jam 19:00 WIT. lanjut berangkat dari morotai ke tobelo jam 15:00 WIT, kemudian tobelo ke dama pada jam 17:00, tiba di dama jam 18:00 WIT. kemudian berangkat di hari selasa jam 12:00 ke manado dan tiba jam 08:00 WIT, kapal napoleon 777 tiba dari kendari ke wanci pada hari rabu dan hari minggu pada jam 17:00/18:00 WITA, kapal napoelon 777 tiba dari wanci ke kendari pada hari selasa dan sabtu pada jam 17:00/18:00 WITA, kapal simba 01 tiba dari kendari pada hari kamis dan senin pada jam 17:00/18:00 WITA, kapal simba 01 tiba di wanci pada hari rabu dan minggu pada jam 17:00/18:00 WITA", "kapal simba 01 tiba di wanci pada hari kamis dan senin pada jam 107:00/18:00 WITA"]
-    },
-    {"tag": "napoleon 777 tiba",
-    "patterns": ["kapan napoleon tiba", "kapan napoleon 777 tiba","kapan napoleon 777 tiba di kendari?", "kapan napoleon 777 tiba di kendari?", "kapan napoleon tiba di kendari?", "kapan napoleon tiba di kendari?", "kapan napoleon 777 tiba di wanci?", "kapan napoleon 777 tiba di wanci?", "kapan napoleon tiba di wanci?", "kapan napoleon tiba di wanci?" ],
-    "responses": ["kapal napoleon 777 tiba di wanci pada hari rabu dan hari minggu pada jam 17:00/18:00 WITA, kapal napoelon 777 tiba di kendari pada hari selasa dan sabtu pada jam 17:00/18:00 WITA"]
-    },
-    {"tag": "simba 01 tiba",
-    "patterns": ["kapan simba tiba", "kapan simba 01 tiba","kapan simba 01 tiba di kendari?", "kapan simba tiba di kendari?", "kapan simba 01 tiba di wanci?", "kapan simba 01 tiba di wanci?", "kapan simba tiba di wanci?" ],
-    "responses": ["kapal simba 01 atau simba tiba di wanci pada hari kamis dan senin pada jam 17:00/18:00 WITA, kapal simba 01 atau simba tiba di kendari pada hari rabu dan minggu pada jam 17:00/18:00 WITA"]
-    },
-    {"tag": "jam bunda maria",
-    "patterns": ["jam berapa bunda maria berangkat?", "jam berapa kapal bunda maria berangkat?"],
-    "responses": ["bunda maria berangkat setiap jam 21:00:00 WIT pada jadwal keberangkatannya, tapi jika muatan banyak dihari itu maka kemungkinan keberangkatan di undur hingga jam 22:00 WIT"]
-    },
-    {"tag": "tiba bunda maria",
-    "patterns": ["kapan bunda maria tiba?", "jam berapa kapal bunda maria tiba?", "kapan kapal bunda maria tiba?", "jam berapa bunda maria tiba"],
-    "responses": ["bunda maria tiba di tempat tujuan ternate maupun bacan yaitu di jam 05:00 WIT"]
-    },
-    {
-        "tag": "jadwal kapal senin",
-        "patterns": ["kapal apa yang berangkat hari senin?", "jadwal kapal hari senin"],
-        "responses": ["Hari Senin tidak tersedia jadwal kapal yang berangkat."]
-    },
-    {
-        "tag": "jadwal kapal selasa",
-        "patterns": ["kapal apa yang berangkat hari selasa?", "jadwal kapal hari selasa"],
-        "responses": ["Hari Selasa terdapat kapal Napoleon 777 yang berangkat dari Wanci tujuan Kendari pada jam 09:00 WITA dan tiba di Kendari pada jam 17:00/18:00 WITA."]
-    },
-    {
-        "tag": "jadwal kapal rabu",
-        "patterns": ["kapal apa yang berangkat hari rabu?", "jadwal kapal hari rabu"],
-        "responses": [
-            "Hari Rabu terdapat kapal Simba 01 yang berangkat dari Wanci tujuan Kendari pada jam 09:00 WITA dan tiba di Kendari pada jam 17:00/18:00 WITA.",
-            "Kapal Napoleon 777 berangkat dari Kendari tujuan Wanci pada jam 09:00 WITA tiba di Wanci jam 17:00/18:00 WITA.",
-            "Kapal Aksar Saputra 09 berangkat dari Ternate tujuan Manado pada jam 16:00/17:00 WIT tiba di pelabuhan Manado pada jam 08:00 WIT."
-        ]
-    },
-    {
-        "tag": "jadwal kapal kamis",
-        "patterns": ["kapal apa yang berangkat hari kamis?", "jadwal kapal hari kamis"],
-        "responses": ["Hari Kamis terdapat kapal Simba 01 berangkat dari Kendari tujuan Wanci pada jam 09:00 WITA tiba di pelabuhan Wanci pada jam 17:00/18:00 WITA."]
-    },
-    {
-        "tag": "jadwal kapal jumat",
-        "patterns": ["kapal apa yang berangkat hari jumat?", "jadwal kapal hari jumat"],
-        "responses": ["Hari Jumat tidak ada jadwal kapal berangkat."]
-    },
-    {
-        "tag": "jadwal kapal sabtu",
-        "patterns": ["kapal apa yang berangkat hari sabtu?", "jadwal kapal hari sabtu"],
-        "responses": ["Hari Sabtu kapal Napoleon 777 berangkat dari Wanci tujuan Kendari pada jam 09:00 WITA dan tiba di pelabuhan Kendari jam 17:00/18:00 WITA."]
-    },
-    {
-        "tag": "jadwal kapal minggu",
-        "patterns": ["kapal apa yang berangkat hari minggu?", "jadwal kapal hari minggu"],
-        "responses": [
-            "Hari Minggu kapal Aksar Saputra 09 tiba dari Manado pada jam 08:00 WIT.",
-            "Kapal Aksar Saputra 09 akan berangkat dari Ternate tujuan Sanana pada jam 16:00/17:00 WIT."
-        ]
-    },
-    {
-        "tag": "jadwal kapal senin pagi",
-        "patterns": ["kapal apa yang berangkat hari senin pagi?", "jadwal kapal hari senin pagi"],
-        "responses": ["Hari Senin pagi tidak tersedia jadwal kapal yang berangkat."]
-    },
-    {
-        "tag": "jadwal kapal senin siang",
-        "patterns": ["kapal apa yang berangkat hari senin siang?", "jadwal kapal hari senin siang"],
-        "responses": ["Hari Senin siang tidak tersedia jadwal kapal yang berangkat."]
-    },
-    {
-        "tag": "jadwal kapal senin sore",
-        "patterns": ["kapal apa yang berangkat hari senin sore?", "jadwal kapal hari senin sore"],
-        "responses": ["Hari Senin sore tidak tersedia jadwal kapal yang berangkat."]
-    },
-    {
-        "tag": "jadwal kapal senin malam",
-        "patterns": ["kapal apa yang berangkat hari senin malam?", "jadwal kapal hari senin malam"],
-        "responses": ["Hari Senin malam tidak tersedia jadwal kapal yang berangkat."]
-    },
-    {
-        "tag": "jadwal kapal selasa pagi",
-        "patterns": ["kapal apa yang berangkat hari selasa pagi?", "jadwal kapal hari selasa pagi"],
-        "responses": ["Jadwal kapal hari Selasa pagi terdapat kapal Napoleon 777 yang berangkat dari Wanci tujuan Kendari pada jam 09:00 WITA dan tiba di Kendari pada jam 17:00/18:00 WITA."]
-    },
-    {
-        "tag": "jadwal kapal selasa siang",
-        "patterns": ["kapal apa yang berangkat hari selasa siang?", "jadwal kapal hari selasa siang"],
-        "responses": ["Hari Selasa siang tidak tersedia jadwal kapal."]
-    },
-    {
-        "tag": "jadwal kapal selasa sore",
-        "patterns": ["kapal apa yang berangkat hari selasa sore?", "jadwal kapal hari selasa sore"],
-        "responses": ["Hari Selasa sore tidak tersedia jadwal kapal."]
-    },
-    {
-        "tag": "jadwal kapal selasa malam",
-        "patterns": ["kapal apa yang berangkat hari selasa malam?", "jadwal kapal hari selasa malam"],
-        "responses": ["Hari Selasa malam tidak tersedia jadwal kapal."]
-    },
-    {
-        "tag": "jadwal kapal rabu pagi",
-        "patterns": ["kapal apa yang berangkat hari rabu pagi?", "jadwal kapal hari rabu pagi"],
-        "responses": [
-            "Hari Rabu pagi terdapat kapal Simba 01 yang berangkat dari Wanci tujuan Kendari pada jam 09:00 WITA dan tiba di Kendari pada jam 17:00/18:00 WITA.",
-            "Hari Rabu pagi Kapal Napoleon 777 berangkat dari Kendari tujuan Wanci pada jam 09:00 WITA tiba di Wanci jam 17:00/18:00 WITA."
-        ]
-    },
-    {
-        "tag": "jadwal kapal rabu siang",
-        "patterns": ["kapal apa yang berangkat hari rabu siang?", "jadwal kapal hari rabu siang"],
-        "responses": ["Hari Rabu siang tidak tersedia jadwal kapal."]
-    },
-    {
-        "tag": "jadwal kapal rabu sore",
-        "patterns": ["kapal apa yang berangkat hari rabu sore?", "jadwal kapal hari rabu sore"],
-        "responses": ["Hari Rabu sore Kapal Aksar Saputra 09 berangkat dari Ternate tujuan Manado pada jam 16:00/17:00 WIT tiba di pelabuhan Manado pada jam 08:00 WIT."]
-    },
-    {
-        "tag": "jadwal kapal rabu malam",
-        "patterns": ["kapal apa yang berangkat hari rabu malam?", "jadwal kapal hari rabu malam"],
-        "responses": ["Hari Rabu malam tidak tersedia jadwal kapal."]
-    },
-    {
-        "tag": "jadwal kapal kamis pagi",
-        "patterns": ["kapal apa yang berangkat hari kamis pagi?", "jadwal kapal hari kamis pagi"],
-        "responses": ["Hari Kamis pagi terdapat kapal Simba 01 berangkat dari Kendari tujuan Wanci pada jam 09:00 WITA tiba di pelabuhan Wanci pada jam 17:00/18:00 WITA."]
-    },
-    {
-        "tag": "jadwal kapal kamis siang",
-        "patterns": ["kapal apa yang berangkat hari kamis siang?", "jadwal kapal hari kamis siang"],
-        "responses": ["Hari Kamis siang tidak tersedia jadwal kapal."]
-    },
-    {
-        "tag": "jadwal kapal kamis sore",
-        "patterns": ["kapal apa yang berangkat hari kamis sore?", "jadwal kapal hari kamis sore"],
-        "responses": ["Hari Kamis sore tidak tersedia jadwal kapal."]
-    },
-    {
-        "tag": "jadwal kapal kamis malam",
-        "patterns": ["kapal apa yang berangkat hari kamis malam?", "jadwal kapal hari kamis malam"],
-        "responses": ["Hari Kamis malam tidak tersedia jadwal kapal."]
-    },
-    {
-        "tag": "jadwal kapal jumat pagi",
-        "patterns": ["kapal apa yang berangkat hari jumat pagi?", "jadwal kapal hari jumat pagi"],
-        "responses": ["Hari Jumat pagi tidak tersedia jadwal kapal."]
-    },
-    {
-        "tag": "jadwal kapal jumat siang",
-        "patterns": ["kapal apa yang berangkat hari jumat siang?", "jadwal kapal hari jumat siang"],
-        "responses": ["Hari Jumat siang tidak tersedia jadwal kapal."]
-    },
-    {
-        "tag": "jadwal kapal jumat sore",
-        "patterns": ["kapal apa yang berangkat hari jumat sore?", "jadwal kapal hari jumat sore"],
-        "responses": ["Hari Jumat sore tidak tersedia jadwal kapal."]
-    },
-    {
-        "tag": "jadwal kapal jumat malam",
-        "patterns": ["kapal apa yang berangkat hari jumat malam?", "jadwal kapal hari jumat malam"],
-        "responses": ["Hari Jumat malam tidak tersedia jadwal kapal."]
-    },
-    {
-        "tag": "jadwal kapal sabtu pagi",
-        "patterns": ["kapal apa yang berangkat hari sabtu pagi?", "jadwal kapal hari sabtu pagi"],
-        "responses": ["Hari Sabtu pagi kapal Napoleon 777 berangkat dari Wanci tujuan Kendari pada jam 09:00 WITA dan tiba di pelabuhan Kendari jam 17:00/18:00 WITA."]
-    },
-    {
-        "tag": "jadwal kapal sabtu siang",
-        "patterns": ["kapal apa yang berangkat hari sabtu siang?", "jadwal kapal hari sabtu siang"],
-        "responses": ["Hari Sabtu siang tidak tersedia jadwal kapal."]
-    },
-    {
-        "tag": "jadwal kapal sabtu sore",
-        "patterns": ["kapal apa yang berangkat hari sabtu sore?", "jadwal kapal hari sabtu sore"],
-        "responses": ["Hari Sabtu sore tidak tersedia jadwal kapal."]
-    },
-    {
-        "tag": "jadwal kapal sabtu malam",
-        "patterns": ["kapal apa yang berangkat hari sabtu malam?", "jadwal kapal hari sabtu malam"],
-        "responses": ["Hari Sabtu malam tidak tersedia jadwal kapal."]
-    },
-    {
-        "tag": "jadwal kapal minggu pagi",
-        "patterns": ["kapal apa yang berangkat hari minggu pagi?", "jadwal kapal hari minggu pagi"],
-        "responses": ["Hari Minggu pagi kapal Aksar Saputra 09 tiba dari Manado pada jam 08:00 WIT."]
-    },
-    {
-        "tag": "jadwal kapal minggu siang",
-        "patterns": ["kapal apa yang berangkat hari minggu siang?", "jadwal kapal hari minggu siang"],
-        "responses": ["Hari Minggu siang tidak tersedia jadwal kapal."]
-    },
-    {
-        "tag": "jadwal kapal minggu sore",
-        "patterns": ["kapal apa yang berangkat hari minggu sore?", "jadwal kapal hari minggu sore"],
-        "responses": ["Hari Minggu sore Kapal Aksar Saputra 09 akan berangkat dari Ternate tujuan Sanana pada jam 16:00/17:00 WIT."]
-    },
-    {
-        "tag": "jadwal kapal minggu malam",
-        "patterns": ["kapal apa yang berangkat hari minggu malam?", "jadwal kapal hari minggu malam"],
-        "responses": ["Hari Minggu malam tidak tersedia jadwal kapal."]
-    }    
-    ]
-
+		{
+			"tag": "napoleon 777",
+			"patterns": [
+				"kapan kapal Napoleon berangkat?",
+				"kapan kapal Napoleon berangkat ke kendari?",
+				"kapan kapal Napoleon berangkat ke wanci?",
+				"kapan kapal Napoleon 777 berangkat dari Wanci ke Kendari?",
+				"kapan kapal Napoleon 777 berangkat dari Kendari ke Wanci?"
+			],
+			"responses": [
+				"kapal Napoleon 777 berangkat pada hari selasa dari wanci ke kendari pada jam 09:00 WITA dan berangkat pada hari rabu dari kendari ke wanci pada jam 09:00 WITA"
+			]
+		},
+		{
+			"tag": "jadwal kapal kendari",
+			"patterns": [
+				"kapal apa yang berangkat dari wanci ke kendari",
+				"kapal apa yang berangkat dari kendari ke wanci",
+				"jadwal kapal kendari"
+			],
+			"responses": [
+				"jadwal kapal kendari-wanci atau wanci-kendari ada 2 kapal yaitu Napoleon 777 dan Simba 01 ada pada hari selasa dan rabu"
+			]
+		},
+		{
+			"tag": "harga tiket kapal Kendari",
+			"patterns": [
+				"berapa harga tiket kapal dari kendari-wanci?",
+				"tiket kapal dari kendari-wanci berapa?",
+				"berapa harga tiket untuk perjalanan kapal kendari-wanci",
+				"berapa tiket kapal dari kendari-wanci?",
+				"tiket kapal dari wanci-kendari berapa?",
+				"berapa harga tiket kapal dari wanci ke kendari?",
+				"harga kapal tiket kendari",
+				"harga kapal tiket wanci",
+				"berapa harga tiket kendari?",
+				"berapa harga tiket wanci?",
+				"berapa harga tiket kapal wanci?",
+				"berapa harga tiket kapal kendari?",
+				"berapa tiket kapal wanci?",
+				"berapa tiket kapal kendari?"
+			],
+			"responses": [
+				"Harga tiket kapal dari kendari-wanci dan wanci-kendari adalah Rp.220.000 perorang (dewasa). sedangkan harga tiket kamar Rp.200.000 perorang"
+			]
+		},
+		{
+			"tag": "pesan tiket",
+			"patterns": [
+				"Bagaimana cara pesan tiket kapal ke kendari-wanci?",
+				"cara pesan tiket kapal kendari-wanci bagaimana?",
+				"dimana saya bisa membeli tiket kapal kendari-wanci?",
+				"Bagaimana cara pesan tiket kapal kendari ke wanci?",
+				"Bagaimana cara pesan tiket kapal kendari?",
+				"Bagaimana cara pesan tiket kapal wanci?",
+				"Bagaimana cara pesan tiket kapal ke kendari?",
+				"Bagaimana cara pesan tiket kapal ke wanci",
+				"cara pesan tiket kapal wanci",
+				"cara pesan tiket kapal kendari"
+			],
+			"responses": [
+				"pemesanan tiket kapal kendari-wanci atau wanci-kendari bisa dilakukan di loket penjualan tiket di pelabuhan wanci jika dari wanci dan di pelabuhan kapal wanci di kendari jika berangkat dari kendari."
+			]
+		},
+		{
+			"tag": "batalkan tiket",
+			"patterns": [
+				"apakah bisa membatalkan tiket kapal yang sudah saya pesan?",
+				"bagaiamana cara membatalkan tiket kapal ke kendari?",
+				"pembatalan tiket"
+			],
+			"responses": [
+				"pembatalan tiket kapal bisa dilakukan di loket tiket kapal di pelabuhan"
+			]
+		},
+		{
+			"tag": "ubah jadwal keberangkatan",
+			"patterns": [
+				"bagaiamana cara mengubah jadwal keberangkatan kapal saya?",
+				"apakah saya bisa mengubah waktu keberangkatan kapal?",
+				"bagaiamana cara mengubah jadwal berangkat kapal?",
+				"cara mengubah jadwal kapal"
+			],
+			"responses": [
+				"anda bisa mengubah jadwal keberangkatan melalui situs web FERINESIA.COM dan bisa langsung ke loket tiket kapal terdekat"
+			]
+		},
+		{
+			"tag": "kapal yang tersedia",
+			"patterns": [
+				"kapal apa saja yang tersedia untuk rute ternate ke manado?",
+				"Kapal apa yang tersedia untuk perjalanan dari Ternate ke Manado?",
+				"apakah ada kapal yang berangkat dari ternate ke manado?",
+				"adakah kapal tujuan ternate ke manado??",
+				"kapal tujuan manado",
+				"kapal tujuan manado",
+				"kapal ternate manado",
+				"kapal rute manado",
+				"kapal tujuan ke manado",
+				"kapal tujuan manado"
+			],
+			"responses": [
+				"kapal yang tersedia untuk rute ternate ke manado adalah kapal Aksar Saputra 09"
+			]
+		},
+		{
+			"tag": "kapal yang tersedia untuk ternate fala",
+			"patterns": [
+				"kapal apa saja yang tersedia untuk rute ternate ke fala?",
+				"Kapal apa yang tersedia untuk perjalanan dari Ternate ke fala?",
+				"apakah ada kapal yang berangkat dari ternate ke fala?",
+				"adakah kapal tujuan ternate ke fala?",
+				"kapal tujuan fala",
+				"kapal tujuan fala",
+				"kapal ternate fala",
+				"kapal rute fala",
+				"kapal tujuan ke fala"
+			],
+			"responses": [
+				"kapal yang tersedia untuk rute ternate ke fala adalah kapal Aksar Saputra 09"
+			]
+		},
+		{
+			"tag": "kapal yang tersedia untuk ternate sanana",
+			"patterns": [
+				"kapal apa saja yang tersedia untuk rute ternate ke sanana?",
+				"Kapal apa yang tersedia untuk perjalanan dari Ternate ke sanana?",
+				"apakah ada kapal yang berangkat dari ternate ke sanana?",
+				"adakah kapal tujuan ternate ke sanana??",
+				"kapal tujuan sanana",
+				"kapal ternate sanana",
+				"kapal sanana ternate",
+				"kapal rute sanana",
+				"kapal tujuan ke sanana",
+				"kapal tujuan sanana ternate"
+			],
+			"responses": [
+				"kapal yang tersedia untuk rute ternate ke sanana atau sanana ke ternate adalah kapal Aksar Saputra 09"
+			]
+		},
+		{
+			"tag": "kapal yang tersedia untuk ternate dofa",
+			"patterns": [
+				"kapal apa saja yang tersedia untuk rute ternate ke dofa?",
+				"Kapal apa yang tersedia untuk perjalanan dari Ternate ke dofa?",
+				"apakah ada kapal yang berangkat dari ternate ke dofa?",
+				"adakah kapal tujuan ternate ke dofa??",
+				"kapal tujuan dofa",
+				"kapal ternate dofa",
+				"kapal sanana dofa",
+				"kapal rute dofa",
+				"kapal tujuan dofa ternate"
+			],
+			"responses": [
+				"kapal yang tersedia untuk rute ternate ke dofa adalah kapal Aksar Saputra 09"
+			]
+		},
+		{
+			"tag": "kapal yang tersedia untuk sanana dofa",
+			"patterns": [
+				"kapal apa saja yang tersedia untuk rute sanana ke dofa?",
+				"Kapal apa yang tersedia untuk perjalanan dari sanana ke dofa?",
+				"apakah ada kapal yang berangkat dari sanana ke dofa?",
+				"adakah kapal tujuan sanana ke dofa??",
+				"kapal sanana dofa",
+				"kapal dofa sanana",
+				"kapal rute dofa",
+				"kapal tujuan ke dofa",
+				"kapal tujuan sanana dofa",
+				"kapal apa yang berangkat dari sanana ke dofa?",
+				"kapal apa yang berangakt dari dofa ke sanana?"
+			],
+			"responses": [
+				"kapal yang tersedia untuk rute sanana ke dofa adalah kapal Aksar Saputra 09"
+			]
+		},
+		{
+			"tag": "kapal yang tersedia untuk fala dofa",
+			"patterns": [
+				"kapal apa saja yang tersedia untuk rute fala ke dofa?",
+				"Kapal apa yang tersedia untuk perjalanan dari fala ke dofa?",
+				"apakah ada kapal yang berangkat dari fala ke dofa?",
+				"adakah kapal tujuan fala ke dofa??",
+				"kapal fala dofa",
+				"kapal dofa fala",
+				"kapal tujuan fala dofa",
+				"kapal apa yang berangkat dari fala ke dofa?",
+				"kapal apa yang berangakt dari dofa ke fala?"
+			],
+			"responses": [
+				"kapal yang tersedia untuk rute fala ke dofa atau fala ke dofa adalah kapal Aksar Saputra 09"
+			]
+		},
+		{
+			"tag": "kapal yang tersedia untuk manado sanana",
+			"patterns": [
+				"kapal apa saja yang tersedia untuk rute manado ke sanana?",
+				"Kapal apa yang tersedia untuk perjalanan dari manado ke sanana?",
+				"apakah ada kapal yang berangkat dari manado ke sanana?",
+				"adakah kapal tujuan manado ke sanana??",
+				"kapal manado sanana",
+				"kapal sanana manado",
+				"kapal tujuan manado sanana",
+				"kapal apa yang berangkat dari manado ke sanana?",
+				"kapal apa yang berangkat dari sanana ke manado?"
+			],
+			"responses": [
+				"kapal yang tersedia untuk rute manado ke sanana atau sanana ke manado adalah kapal Aksar Saputra 09"
+			]
+		},
+		{
+			"tag": "kapal yang tersedia untuk manado dofa",
+			"patterns": [
+				"kapal apa saja yang tersedia untuk rute manado ke dofa?",
+				"Kapal apa yang tersedia untuk perjalanan dari manado ke dofa?",
+				"apakah ada kapal yang berangkat dari manado ke dofa?",
+				"adakah kapal tujuan manado ke dofa??",
+				"kapal manado dofa",
+				"kapal dofa manado",
+				"kapal tujuan manado dofa",
+				"kapal apa yang berangkat dari manado ke dofa?",
+				"kapal apa yang berangkat dari dofa ke manado?"
+			],
+			"responses": [
+				"kapal yang tersedia untuk rute manado ke dofa atau dofa ke manado adalah kapal Aksar Saputra 09"
+			]
+		},
+		{
+			"tag": "kapal yang tersedia untuk manado fala",
+			"patterns": [
+				"kapal apa saja yang tersedia untuk rute manado ke fala?",
+				"Kapal apa yang tersedia untuk perjalanan dari manado ke fala?",
+				"apakah ada kapal yang berangkat dari manado ke fala?",
+				"adakah kapal tujuan manado ke fala??",
+				"kapal manado fala",
+				"kapal fala manado",
+				"kapal tujuan manado fala",
+				"kapal apa yang berangkat dari manado ke fala?",
+				"kapal apa yang berangkat dari fala ke manado?"
+			],
+			"responses": [
+				"kapal yang tersedia untuk rute manado ke fala atau fala ke manado adalah kapal Aksar Saputra 09"
+			]
+		},
+		{
+			"tag": "durasi perjalanan",
+			"patterns": [
+				"berapa lama perjalanan kapal dari kendari ke wanci?",
+				"berapa lama perjalanan kapal dari wanci ke kendari?"
+			],
+			"responses": [
+				"perjalanan kapal dari kendari ke wanci adalah 9 sampai dengan 10 jam tiba"
+			]
+		},
+		{
+			"tag": "durasi perjalanan kapal",
+			"patterns": [
+				"berapa jam perjalanan dari ternate ke fala?",
+				"berapa jam perjalanan ke fala",
+				"berapa jam perjalanan ke fala ke ternate"
+			],
+			"responses": [
+				"waktu yang ditempuh dari ternate menuju fala atau dari fala ke ternate adalah 20 jam"
+			]
+		},
+		{
+			"tag": "fasilitas di kapal aksar saputra 09",
+			"patterns": [
+				"fasilitas apa saja yang tersedia di kapal Aksar Saputra 09?",
+				"fasilitas apa yang ada di kapal Aksar Saputra 09?",
+				"fasilitas apa yang ada di kapal Aksar 09?",
+				"fasilitas apa yang ada di kapal Aksar 9?",
+				"apa saja fasilitas yang ada di kapal Aksar Saputra 08",
+				"Kapal Simba 01 ada fasilitas apa saja?",
+				"bisa beri tahu saya fasilitas yang ada pada kapal Napoleon 777?",
+				"Ada fasilitas apa saja yang ada di kapal Aksar Saputra 23?",
+				"di kapal Bunda Maria tersedia fasilitas apa saja?"
+			],
+			"responses": [
+				"fasilitas yang tersedia di kapal Aksar Saputra 09 dilengkapi dengan fasilitas toilet, kantin, ranjang tidur, kamar(VIP), ruangan ber AC dan hiburan karaoke"
+			]
+		},
+		{
+			"tag": "layanan di kapal",
+			"patterns": [
+				"Layanan apa yang tersedia dikapal?",
+				"ada layanan apa saja di kapal dari ternate ke Fala?",
+				"Tolong beri tau saya layanan yang disediakan di kapal Aksar Saputra 23?",
+				"Layanan apa saja yang tersedia di kapal menuju kendari?",
+				"ada layanan apa saja di kapal aksar saputra 08?"
+			],
+			"responses": [
+				"layanan yang tersedia di kapal selama perjalanan meliputi layanan makanan dan minuman serta bantuan medis darurat"
+			]
+		},
+		{
+			"tag": "diskon tiket",
+			"patterns": [
+				"apakah ada diskon tiket untuk mahasiswa?",
+				"apakah ada diskon tiket untuk penumpang yang rombongan?",
+				"apakah ada diskon tiket aksar saputra 23?"
+			],
+			"responses": [
+				"kami menyediakan diskon tiket untuk penumpang rombongan sebesar 25% dari harga tiket kapal untuk seluruh penumpang yang melakukan keberangkatan rute perjalanan kapal pada PT. Aksar Saputra Lines"
+			]
+		},
+		{
+			"tag": "bawa kendaraan di kapal",
+			"patterns": [
+				"apakah saya bisa membawa kendaraan ke kapal?",
+				"bisakah bawa kendaraan di kapal?",
+				"berapa biaya untuk membawa kendaraan di kapal?",
+				"bisakah bawa motor untuk diangkut dikapal?",
+				" apakah boleh kirim motor?",
+				"apakah boleh bawa sepeda?",
+				"apakah boelh kirim motor atau sepeda dikapal?"
+			],
+			"responses": [
+				"Ya, bisa membawa kendaraan ke kapal. silahkan informasikan jenis kendaraan anda saat memesan tiket",
+				"untuk membawa kendaraan di kapal adalah boleh. pastikan anda melaporkan kendaraan yang akan anda bawa",
+				" biaya untuk membawa kendaraan di kapal bervariasi tergantung pada jenis kendaraan"
+			]
+		},
+		{
+			"tag": "kebijakan bagasi",
+			"patterns": [
+				"apa kebijakan bagasi di kapal",
+				"apakah ada biaya tambahan untuk bagasi di kapal?",
+				" apakah ada aturan bagasi di kapal?"
+			],
+			"responses": [
+				"setiap penumpang diizinkan membawa bagasi hingga [jumlah berat], kebijakan bagasi untuk kapal memperbolehkan bagasi dan tidak dikenakan biaya tambahan, dan tidak ada aturan tertentu untuk ketentuan bagasi di kapal "
+			]
+		},
+		{
+			"tag": "fasilitas penumpang khusus",
+			"patterns": [
+				"apa fasilitas yang tersedia untuk penumpang difabel?",
+				" apakah ada fasilitas khusus untuk lansia di kapal?",
+				"apakah ada bantuan khsusu untuk penumpang dengan disabilitas?"
+			],
+			"responses": [
+				"untuk saat ini, fasilitas untuk penumpang difabel belum tersedia khusus, fasilitas khusus untuk lansia belum ada di kapal, tapi kami dari ABK kapal meyakinkan bahwa penumpang lansia aman di dalam kapal selama perjalanan bersama kami, untuk penumpang dengan disabilitas akan mendapatkan bantuan dari ABK kapal selama perjalanan"
+			]
+		},
+		{
+			"tag": "penundaan karna cuaca",
+			"patterns": [
+				"apakah kapal akan tertunda jika cuaca buruk?",
+				"apakah jadwal kapal bisa berubah jika cuaca buruk?",
+				"apakah kapal tidak di berangkatkan jika cuaca buruk?"
+			],
+			"responses": [
+				"kapal akan tertunda jika cuaca buruk, sehingga calon penumpang diharapkan untuk tetap menununggu informasi dari ABK kapal. jika cuaca tidak membaik kurang lebih dari 12 jam. maka calon penumpang bisa membatalkan keberangkatan. sehingga uang tiket kapal yang telah dibeli akan dikembalikan ke penumpang"
+			]
+		},
+		{
+			"tag": "pembatalan keberangkatan",
+			"patterns": [
+				"bagaimana cara membatalkan keberangkatan kapal saya?",
+				"apa syarat untuk membatalkan tiket kapal?"
+			],
+			"responses": [
+				"untuk membatalkan keberangkatan anda, anda bisa pergi ke loket tiket tempat anda membeli tiket agar bisa dibatalkan sebelum kapal berangkat"
+			]
+		},
+		{
+			"tag": "simba 01",
+			"patterns": [
+				"kapan kapal Simba berangkat?",
+				"kapan kapal Simba 01 berangkat?",
+				"kapan kapal Simba berangkat ke kendari?",
+				"kapan kapal Simba 01 berangkat ke kendari?",
+				"kapan kapal Simba berangkat ke wanci?",
+				"kapan kapal Simba 01 berangkat ke wanci?",
+				"kapan kapal simba 01 berangkat dari wanci ke kendari?",
+				"kapan kapal simba berangkat dari wanci ke kendari?",
+				"kapan kapal Simba 01 berangkat dari Kendari ke Wanci?",
+				"kapan simba 01 berangkat?",
+				"kapan simba berangkat?",
+				"kapan kapal simba berangkat?"
+			],
+			"responses": [
+				"kapal simba 01 adalah kapal yang memiliki rute perjalanan wanci ke kendari. kapal Simba 01 berangkat pada hari rabu dari wanci ke kendari, kapal Simba 01 berangkat pada hari kamis dari kendari ke wanci. jam keberangkatan kapal simba 01 yaotu pada jam 09:00 WITA "
+			]
+		},
+		{
+			"tag": "jadwal simba 01",
+			"patterns": [
+				"jam berapa kapal Simba berangkat?",
+				"jam berapa kapal Simba berangkat ke kendari?",
+				"jam berapa kapal Simba berangkat ke wanci?",
+				"jam berapa kapal Simba 01 berangkat dari Wanci ke Kendari?",
+				"jam berapa kapal Simba 01 berangkat dari Kendari ke Wanci?",
+				"jam berapa kapal Simba 01 berangkat?"
+			],
+			"responses": [
+				"kapal Simba 01 berangkat pada jam 09:00 WITA dari wanci ke kendari, dan kapal Simba 01 berangkat pada jam 09:00 WITA dari kendari ke wanci "
+			]
+		},
+		{
+			"tag": "Aksar Saputra 09",
+			"patterns": [
+				"informasi aksar saputra 09",
+				"aksar saputra 09",
+				"aksar 09",
+				"aksar saputra 9",
+				"aksar 9",
+				"informasi aksar 9",
+				" informasi aksar saputra 9",
+				"informasi kapal aksar saputra 09",
+				"informasi aksar saputra 9",
+				"informasi kapal aksar saputra 9"
+			],
+			"responses": [
+				"Aksar Saputra 09 adalah kapal yang saat ini memiliki rute perjalanan dari manado, ternate, sanana, dofa, fala."
+			]
+		},
+		{
+			"tag": "jadwal aksar saputra 09",
+			"patterns": [
+				"kapan kapal aksar saputra 09 berangkat?",
+				"kapan kapal aksar saputra 9 berangkat?",
+				"kapan kapal aksar 09 berangkat?",
+				"kapan kapal aksar 9 berangkat?",
+				"kapan aksar 9 berangkat?",
+				"kapan kapal aksar saputra 09 berangkat dari Ternate ke manado?",
+				"kapan kapal aksar saputra 09 berangkat dari Ternate ke sanana?",
+				" kapan kapal aksar saputra 09 berangkat dari sanana ke fala?",
+				"jadwal kapal aksar saputra 09",
+				"jadwal kapal aksar saputra 9",
+				"kapan aksar saputra 09 berangkat?",
+				"kapan aksar saputra 9 berangkat?",
+				"kapan aksar 09 berangkat?",
+				"kapan aksar 9 berangkat?"
+			],
+			"responses": [
+				"kapal aksar saputra 09 berangkat dari Ternate setiap hari minggu dan rabu. dimana hari rabu dan minggu memiliki rutenya perjalanan yang berbeda,  kapal aksar saputra 09 berangkat dari ternate ke manado pada hari rabu di pelabuhan ahmad yani ternate, kapal aksar saputra 09 berangkat dari ternate ke sanana yaitu pada hari minggu dari pelabuhan ahmad yani ternate, kapal aksar saputra 09 berangkat dari sanana ke fala pada hari minggu dari pelabuhan sanana"
+			]
+		},
+		{
+			"tag": "tiket kapal aksar saputra 09",
+			"patterns": [
+				"berapa harga tiket kapal aksar saputra 09?",
+				"berapa harga tiket kapal aksar saputra 09 dari ternate ke sanana?",
+				" harga tiket kapal aksar saputra 09 berapa dari ternate ke manado?",
+				"tiket kapal aksar saputra 09 harganya berapa dari ternate ke dofa?",
+				"harga tiket manado",
+				"harga tiket kapal manado",
+				"harga tiket sanana",
+				"berapa harga tiket sanana?",
+				"harga tiket kapal sanana",
+				"harga tiket fala",
+				"berapa harga tiket fala",
+				"harga tiket kapal fala",
+				"harga tiket dofa",
+				"harga tiket kapal dofa",
+				"berapa harga tiket dofa?"
+			],
+			"responses": [
+				"harga tiket kapal aksar saputra 09 yaitu ternate ke sanana Rp.365.000, ternate ke dofa Rp.385.000, ternate ke fala Rp.385.000, ternate ke manado Rp.450.000"
+			]
+		},
+		{
+			"tag": "pesan tiket aksar saputra 09",
+			"patterns": [
+				"bagaimana cara pesan tiket kapal aksar 09",
+				"bagaimana cara saya mendapatkan tiket kapal aksar 09?"
+			],
+			"responses": [
+				"untuk memesan tiket kapal aksar saputra 09 dapat dilakukan di loket tiket yang berlokasi di mangga dua, dan anda juga bisa membelinya secara online melalui situs web FERINESIA.COM"
+			]
+		},
+		{
+			"tag": "batalkan tiket kapal aksar saputra 09",
+			"patterns": [
+				"batalkan tiket kapal aksar saputra 09",
+				"bagaimana cara membatalkan tiket kapal aksar saputra 09?",
+				" apakah saya bisa membatalkan tiket kapal yang sudah saya pesan?"
+			],
+			"responses": [
+				"pembatalan tiket kapal aksar saputra 09 dapat dilakukan di loket tiket kapal yang berlokasi di mangga dua atau jika anda membeli tiket secara online"
+			]
+		},
+		{
+			"tag": "pengiriman barang kapal aksar saputra 09",
+			"patterns": [
+				"apakah saya bisa mengirim barang dengan kapal aksar saputra 09?",
+				"bagaiamana cara mengirim barang di kapal aksar saputra 09?",
+				"apakah bisa mengirim barang di kapal aksar saputra 09?",
+				"berapa biayaa pengiriman barang di kapal aksar saputra 09?"
+			],
+			"responses": [
+				"ya, anda bisa mengirim barang dengan kapal ini, anda bisa mengecek tempat pengiriman barangnya di dek-dek kapal. biaya pengiriman mulai dari harga Rp.10.000 hinga keatas sesuai dengan jenis barangnya"
+			]
+		},
+		{
+			"tag": "waktu kedatangan aksar saputra 09",
+			"patterns": [
+				"kapan kapal aksar saputra 09 tiba di sanana?",
+				"kapan kapal aksar saputra 9 tiba di sanana?",
+				"kapan kapal aksar 09 tiba di sanana?",
+				"kapan kapal aksar 9 tiba di sanana?",
+				"jam berapa kapal aksar saputra 09 akan sampai di pelabuhan sanana?",
+				"jam berapa kapal aksar saputra 9 akan sampai di pelabuhan sanana?",
+				"jam berapa kapal aksar 9 akan sampai di pelabuhan sanana?",
+				"jam berapa aksar 9 akan sampai di pelabuhan sanana?"
+			],
+			"responses": [
+				"kapal anda diperkirakan tiba di pelabuhan sanana jika dari ternate yaitu pada hari senin, kurang lebih jam 10.00 WIT, jika kapal aksar saputra 09 dari fala dan dofa maka diperkirakan tiba di sanana hari senin jam 11.00 WIT"
+			]
+		},
+		{
+			"tag": "makanan di kapal aksar saputra 09",
+			"patterns": [
+				"makanan apa saja yang tersedia di kapal aksar saputra 09?",
+				"makanan apa saja yang tersedia di kapal aksar saputra 9?",
+				"makanan apa saja yang tersedia di kapal aksar 9?",
+				"makanan apa saja yang tersedia di aksar saputra 09?",
+				"makanan apa saja yang tersedia di aksar 9",
+				"apakah bisa memesan makanan di kapal aksar saputra 09?",
+				"apakah bisa memesan makanan di kapal aksar saputra 9?",
+				"apakah bisa memesan makanan di kapal aksar 09?",
+				"apakah bisa memesan makanan di kapal aksar 9?",
+				"apakah bisa memesan makanan di aksar saputra 9?"
+			],
+			"responses": [
+				"kapal aksar saputra 09 menyediakan makanan berat misalkan nasi kotak dan aqua gelas bagi penumpang. ada juga pilihan lain untuk memesan makanan di kantin kapal"
+			]
+		},
+		{
+			"tag": "minuman di kapal aksar saputra 09",
+			"patterns": [
+				"minuman apa saja yang tersedia di kapal aksar saputra 09?",
+				"minuman di kapal aksar saputra 09",
+				"minuman di kapal aksar saputra 9",
+				"minuman di kapal aksar 9",
+				"minuman di kapal aksar 09",
+				"minuman di aksar saputra 09",
+				"minuman di aksar saputra 9",
+				"minuman di aksar 09"
+			],
+			"responses": [
+				"minuman yang tersedia di kapal aksar saputra 09 adalah berbagai minuman yang dapat dipesan melalui kantin kapal, misalkan minuman dingin dan minuman hangat. anda bisa sambil nyantai di dek 3 kapal bagian belakang dengan menghirup udara segar"
+			]
+		},
+		{
+			"tag": "prosedur naik kapal aksar saputra 09",
+			"patterns": [
+				"apa yang harus dilakukan saat naik kapal aksar saputra 09?",
+				"bagaiamana proses boarding kapal aksar saputra 09?",
+				"apa yang perlu disiapkan saat naik kapal aksar saputra 09?"
+			],
+			"responses": [
+				"saat naik kapal, pastikan anda sudah mempersiapkan tiket dan kartu identias anda yang sesuai untuk diperiksa oleh petugas. "
+			]
+		},
+		{
+			"tag": "kontak darurat aksar saputra 09",
+			"patterns": [
+				"bagaimana cara menghubungi kontak darurat di kapal aksar saputra 09?",
+				" apakah ada nomor kontak darurat di kapal aksar saputra 09?",
+				"kontak darurat aksar saputra 09"
+			],
+			"responses": [
+				"untuk menghubungi kontak darurat kapal aksar saputra 09, anda dapat menghubungi nomor 082290667123"
+			]
+		},
+		{
+			"tag": "masa berlaku tiket kapal",
+			"patterns": [
+				"bagaimana jika saya tidak jadi berangkat, apakah tiket masih berlaku?",
+				" masa berlaku tiket"
+			],
+			"responses": [
+				"masa berlaku tiket  kapal anda sesuai dengan tanggal dan waktu keberangkatan yang tertera di tiket, jika tidak jadi berangkat maka tiket yang telah dipesan dinyatakan hangus, terkecuali anda melakukan reschedule ke loket tiket kapal tapi dengan syarat melakukan reschedule keberangkatan dengan menggunakan kapal yang sama"
+			]
+		},
+		{
+			"tag": "barang hilang di kapal",
+			"patterns": [
+				"apa yang harus saya lakukan jika barang saya hilang di kapal?",
+				" bagaimana cara melaporkan barang hilang di kapal?",
+				" siapa yang saya bisa hubungi jika barang saya hilang di kapal?"
+			],
+			"responses": [
+				"jika anda kehilangan barang di kapal, segera laporkan ke kru kapal atau abk kapal atau ke pusat informasi di kapal"
+			]
+		},
+		{
+			"tag": "pembatalan keberangkatan",
+			"patterns": [
+				"bagaimana cara membatalkan keberangkatan kapal saya?",
+				"apa syarat untuk membatalkan tiket kapal?"
+			],
+			"responses": [
+				"untuk membatalkan keberangkatan anda, anda bisa pergi ke loket tiket tempat anda membeli tiket agar bisa dibatalkan sebelum kapal berangkat"
+			]
+		},
+		{
+			"tag": "Aksar Saputra 23",
+			"patterns": ["informasi aksar saputra 23", "aksar saputra 23"],
+			"responses": [
+				"Aksar Saputra 23 adalah kapal yang saat ini memiliki rute perjalanan dari manado, dama, tobelo, morotai."
+			]
+		},
+		{
+			"tag": "jadwal aksar saputra 23",
+			"patterns": [
+				"kapan kapal aksar saputra 23 berangkat?",
+				"kapan kapal aksar 23 berangkat dari morotai ke manado?",
+				"kapan kapal aksar 23 berangkat dari tobelo ke morotai?"
+			],
+			"responses": [
+				"kapal aksar saputra 23 berangkat dari manado setiap hari jumat. dimana memiliki rute manado-dama-tobelo-morotai, dan kapal aksar saputra 23 berangkat dari tobelo ke morotai pada hari sabtu jam 1 siang di pelabuhan tobelo"
+			]
+		},
+		{
+			"tag": "tiket kapal aksar saputra 23",
+			"patterns": [
+				"berapa harga tiket kapal aksar saputra 23?",
+				"berapa harga tiket kapal aksar saputra 23 dari tobelo ke morotai?",
+				" harga tiket kapal aksar saputra 23 berapa dari manado ke dama?",
+				"tiket kapal aksar saputra 23 harganya berapa dari manado ke morotai?",
+				"harga tiket kapal aksar 23",
+				"harga tiket kapal aksar saputra 23",
+				"harga tiket aksar saputra 23"
+			],
+			"responses": [
+				"harga tiket kapal aksar saputra 23 yaitu manado ke dama Rp.400.000, tobelo ke morotai Rp.100.000, manado ke morotai Rp 500.000, dama ke tobelo Rp.100.000"
+			]
+		},
+		{
+			"tag": "pesan tiket aksar saputra 23",
+			"patterns": [
+				"bagaimana cara pesan tiket kapal aksar saputra 23",
+				"bagaimana cara saya mendapatkan tiket kapal aksar saputra 23?",
+				"cara pesan tiket aksar saputra 23",
+				"cara pesan tiket kapal aksar saputra 23",
+				"cara pesan tiket kapal aksar 23",
+				"cara pesan tiket aksar 23"
+			],
+			"responses": [
+				"untuk memesan tiket kapal aksar saputra 23 dapat dilakukan di loket tiket yang berlokasi di mangga dua, dan anda juga bisa membelinya secara online melalui situs web FERINESIA.COM"
+			]
+		},
+		{
+			"tag": "batalkan tiket kapal aksar saputra 23",
+			"patterns": [
+				"batalkan tiket kapal aksar saputra 23",
+				"bagaimana cara membatalkan tiket kapal aksar saputra 23?",
+				" apakah saya bisa membatalkan tiket kapal yang sudah saya pesan?"
+			],
+			"responses": [
+				"pembatalan tiket kapal aksar saputra 23 dapat dilakukan di loket tiket kapal yang berlokasi di mangga dua atau jika anda membeli tiket secara online."
+			]
+		},
+		{
+			"tag": "pengiriman barang kapal aksar saputra 23",
+			"patterns": [
+				"apakah saya bisa mengirim barang dengan kapal aksar saputra 23?",
+				"bagaiamana cara mengirim barang di kapal aksar saputra 23?",
+				"apakah bisa mengirim barang di kapal aksar saputra 23?",
+				"berapa biaya pengiriman barang di kapal aksar saputra 23?"
+			],
+			"responses": [
+				"ya, anda bisa mengirim barang dengan kapal ini, anda bisa mengecek tempat pengiriman barangnya di dek-dek kapal. biaya pengiriman mulai dari harga Rp.10.000 hinga keatas sesuai dengan jenis barangnya"
+			]
+		},
+		{
+			"tag": "waktu kedatangan aksar saputra 23",
+			"patterns": [
+				"kapan kapal aksar saputra 23 tiba di dama?",
+				"jam berapa kapal aksar saputra 23 akan sampai di pelabuhan morotai?"
+			],
+			"responses": [
+				"kapal anda diperkirakan tiba di pelabuhan dama jika dari manado yaitu pada hari sabut, kurang lebih jam 08.00 WIT, jika kapal aksar saputra 23 dari tobelo,  maka diperkirakan tiba di dama hari selasa jam 17.00 WIT."
+			]
+		},
+		{
+			"tag": "makanan di kapal aksar saputra 23",
+			"patterns": [
+				"makanan apa saja yang tersedia di kapal aksar saputra 23?",
+				"apakah bisa memesan makanan di kapal aksar saputra 23?"
+			],
+			"responses": [
+				"kapal aksar saputra 23 menyediakan makanan berat misalkan nasi kotak dan aqua gelas bagi penumpang. ada juga pilihan lain untuk memesan makanan di kantin kapal"
+			]
+		},
+		{
+			"tag": "minuman di kapal aksar saputra 23",
+			"patterns": [
+				"minuman apa saja yang tersedia di kapal aksar saputra 23?",
+				"minuman di kapal aksar saputra 23"
+			],
+			"responses": [
+				"minuman yang tersedia di kapal aksar saputra 23 adalah berbagai minuman yang dapat dipesan melalui kantin kapal, misalkan minuman dingin dan minuman hangat. anda bisa sambil nyantai di dek 3 kapal bagian belakang dengan menghirup udara segar"
+			]
+		},
+		{
+			"tag": "prosedur naik kapal aksar saputra 23",
+			"patterns": [
+				"apa yang harus dilakukan saat naik kapal aksar saputra 23?",
+				"bagaiamana proses boarding kapal aksar saputra 23?",
+				"apa yang perlu disiapkan saat naik kapal aksar saputra 23?"
+			],
+			"responses": [
+				"saat naik kapal, pastikan anda sudah mempersiapkan tiket dan kartu identias anda yang sesuai untuk diperiksa oleh petugas. "
+			]
+		},
+		{
+			"tag": "kontak darurat aksar saputra 23",
+			"patterns": [
+				"bagaimana cara menghubungi kontak darurat di kapal aksar saputra 23?",
+				"apakah ada nomor kontak darurat di kapal aksar saputra 23?",
+				"kontak darurat aksar saputra 23"
+			],
+			"responses": [
+				"untuk menghubungi kontak darurat kapal aksar saputra 23, anda dapat menghubungi nomor 082290667123"
+			]
+		},
+		{
+			"tag": "Aksar Saputra 08",
+			"patterns": ["informasi aksar saputra 08", "aksar saputra 08"],
+			"responses": [
+				"Aksar Saputra 08 adalah kapal yang saat ini memiliki rute perjalanan dari kendari ke raha atau sebaliknya"
+			]
+		},
+		{
+			"tag": "jadwal aksar saputra 08",
+			"patterns": [
+				"kapan kapal aksar saputra 08 berangkat?",
+				"kapan kapal aksar saputra 08 berangkat dari kendari ke raha?",
+				"kapan kapal aksar saputra 08 berangkat dari kendari ke raha?",
+				"jadwal kapal aksar saputra 08"
+			],
+			"responses": [
+				"kapal aksar saputra 08 berangkat dari kendari ke raha setiap hari jumat, tetapi akan berubah sesuai dengan rute len perjalannya. biasanya 2 malam setelah berangkat. kapal aksar saputra 08 akan kembali berangkat ke dari asal ke tujuan"
+			]
+		},
+		{
+			"tag": "tiket kapal aksar saputra 08",
+			"patterns": [
+				"berapa harga tiket kapal aksar saputra 08?",
+				"berapa harga tiket kapal aksar saputra 08 dari kendari ke raha?",
+				" harga tiket kapal aksar saputra 08 berapa dari raha ke kendari?",
+				"tiket kapal aksar saputra 08 harganya berapa dari kendari ke raha?",
+				"harga tiket kapal raha",
+				"berapa harga tiket raha",
+				"berapa harga tiket kapal raha"
+			],
+			"responses": [
+				"harga tiket kapal aksar saputra 08 dari kendari ke raha yaitu Rp.145.000, begitupun dengan raha ke kendari"
+			]
+		},
+		{
+			"tag": "pesan tiket aksar saputra 08",
+			"patterns": [
+				"bagaimana cara pesan tiket kapal aksar saputra 08",
+				"bagaimana cara saya mendapatkan tiket kapal aksar saputra 08?",
+				"cara pesan tiket aksar saputra 08",
+				"cara pesan tiket kapal aksar saputra 08",
+				"cara pesan tiket kapal aksar 08",
+				"cara pesan tiket aksar 08",
+				"cara pesan tiket kapal aksar 8",
+				"cara pesan tiket aksar 8",
+				"cara pesan tiket kapal aksar saputra 8"
+			],
+			"responses": [
+				"untuk memesan tiket kapal aksar saputra 08 dapat dilakukan di loket tiket yang berlokasi di pelabuhan kapal wanci di kendari, sulawesi tenggara"
+			]
+		},
+		{
+			"tag": "batalkan tiket kapal aksar saputra 08",
+			"patterns": [
+				"batalkan tiket kapal aksar saputra 08",
+				"bagaimana cara membatalkan tiket kapal aksar saputra 08?"
+			],
+			"responses": [
+				"pembatalan tiket kapal aksar saputra 08 dapat dilakukan di loket tiket kapal yang berlokasi di pelabuhan kapal wanci di kendari, sulawesi tenggara."
+			]
+		},
+		{
+			"tag": "pengiriman barang kapal aksar saputra 08",
+			"patterns": [
+				"apakah saya bisa mengirim barang dengan kapal aksar saputra 08?",
+				"bagaiamana cara mengirim barang di kapal aksar saputra 08?",
+				"apakah bisa mengirim barang di kapal aksar saputra 08?",
+				"berapa biaya pengiriman barang di kapal aksar saputra 08?"
+			],
+			"responses": [
+				"ya, anda bisa mengirim barang dengan kapal aksar saputra 08, anda bisa mengecek tempat pengiriman barangnya di dek-dek kapal. biaya pengiriman mulai dari harga Rp.10.000 hinga keatas sesuai dengan jenis barangnya"
+			]
+		},
+		{
+			"tag": "waktu kedatangan aksar saputra 08",
+			"patterns": [
+				"kapan kapal aksar saputra 08 tiba di raha?",
+				"jam berapa kapal aksar saputra 08 akan sampai di kendari?"
+			],
+			"responses": [
+				"kapal aksar saputra 08 diperkirakan waktu tiba dari kendari ke raha pada jam 05:00 WITA. jika kapal aksar saputra 08 dari raha maka diperkirakan tiba di kendari kurang lebih jam 05:00 WITA"
+			]
+		},
+		{
+			"tag": "makanan di kapal aksar saputra 08",
+			"patterns": [
+				"makanan apa saja yang tersedia di kapal aksar saputra 08?",
+				"apakah bisa memesan makanan di kapal aksar saputra 08?"
+			],
+			"responses": [
+				"kapal aksar saputra 08 menyediakan makanan di kantin kapal"
+			]
+		},
+		{
+			"tag": "minuman di kapal aksar saputra 08",
+			"patterns": [
+				"minuman apa saja yang tersedia di kapal aksar saputra 08?",
+				"minuman di kapal aksar saputra 08"
+			],
+			"responses": [
+				"minuman yang tersedia di kapal aksar saputra 08 adalah berbagai minuman yang dapat dipesan melalui kantin kapal, misalkan minuman dingin dan minuman hangat. anda bisa sambil nyantai di dek 3 kapal bagian belakang dengan menghirup udara segar"
+			]
+		},
+		{
+			"tag": "prosedur naik kapal aksar saputra 08",
+			"patterns": [
+				"apa yang harus dilakukan saat naik kapal aksar saputra 08?",
+				"bagaiamana proses boarding kapal aksar saputra 08?",
+				"apa yang perlu disiapkan saat naik kapal aksar saputra 08?"
+			],
+			"responses": [
+				"saat naik kapal, pastikan anda sudah mempersiapkan tiket dan kartu identias anda yang sesuai untuk diperiksa oleh petugas. "
+			]
+		},
+		{
+			"tag": "kontak darurat aksar saputra 08",
+			"patterns": [
+				"bagaimana cara menghubungi kontak darurat di kapal aksar saputra 08?",
+				" apakah ada nomor kontak darurat di kapal aksar saputra 08?",
+				"kontak darurat aksar saputra 08"
+			],
+			"responses": [
+				"untuk menghubungi kontak darurat kapal aksar saputra 08, anda dapat menghubungi nomor 082290667123"
+			]
+		},
+		{
+			"tag": "Bunda Maria",
+			"patterns": ["informasi Bunda Maria", "Bunda Maria"],
+			"responses": [
+				"Bunda Maria adalah kapal yang saat ini memiliki rute perjalanan dari bacan ke ternate atau sebaliknya"
+			]
+		},
+		{
+			"tag": "jadwal Bunda Maria",
+			"patterns": [
+				"kapan kapal Bunda Maria berangkat?",
+				"kapan Bunda Maria berangkat dari ternate ke bacan?",
+				"kapan kapal Bunda Maria berangkat dari bacan ke ternate?",
+				"jadwal bunda maria"
+			],
+			"responses": [
+				"kapal Bunda Maria berangkat dari ternate ke bacan tergantung dari jadwal kapalnya, karena jadwal kapalnya berubah-ubah sesuai dengan rute len perjalannya. biasanya kapal bunda maria berangkat tiap 4 malam dihitung setelah tiba di bacan dari ternate. kapal Bunda Maria akan kembali berangkat dari asal ke tujuan"
+			]
+		},
+		{
+			"tag": "tiket kapal Bunda Maria",
+			"patterns": [
+				"berapa harga tiket kapal Bunda Maria?",
+				"berapa harga tiket kapal Bunda Maria dari ternate ke bacan?",
+				" harga tiket kapal Bunda Maria berapa dari bacan ke ternate?",
+				"tiket kapal Bunda Maria harganya berapa dari ternate ke bacan?",
+				"tiket kapal bunda maria",
+				"harga tiket bunda maria",
+				"harga tiket kapal bunda maria"
+			],
+			"responses": [
+				"harga tiket kapal Bunda Maria dari ternate ke bacan yaitu Rp.165.000, begitupun dengan bacan ke ternate"
+			]
+		},
+		{
+			"tag": "pesan tiket Bunda Maria",
+			"patterns": [
+				"bagaimana cara pesan tiket kapal Bunda Maria",
+				"bagaimana cara saya mendapatkan tiket kapal Bunda Maria?",
+				"cara pesan bunda maria",
+				"cara pesan tiket kapal bunda maria",
+				"cara pesan tiket kapal bunda maria",
+				"cara pesan tiket bunda maria"
+			],
+			"responses": [
+				"untuk memesan tiket kapal Bunda Maria dapat dilakukan di loket tiket yang berlokasi di mangga dua"
+			]
+		},
+		{
+			"tag": "batalkan tiket kapal Bunda Maria",
+			"patterns": [
+				"batalkan tiket kapal Bunda Maria",
+				"bagaimana cara membatalkan tiket kapal Bunda Maria?"
+			],
+			"responses": [
+				"pembatalan tiket kapal Bunda Maria dapat dilakukan di loket tiket kapal yang berlokasi di mangga dua."
+			]
+		},
+		{
+			"tag": "pengiriman barang kapal Bunda Maria",
+			"patterns": [
+				"apakah saya bisa mengirim barang dengan kapal Bunda Maria?",
+				"bagaiamana cara mengirim barang di kapal Bunda Maria?",
+				"apakah bisa mengirim barang di kapal Bunda Maria?",
+				"berapa biaya pengiriman barang di kapal Bunda Maria?"
+			],
+			"responses": [
+				"ya, anda bisa mengirim barang dengan kapal Bunda Maria, anda bisa mengecek tempat pengiriman barangnya di dek-dek kapal. biaya pengiriman mulai dari harga Rp.10.000 hinga keatas sesuai dengan jenis barangnya"
+			]
+		},
+		{
+			"tag": "waktu kedatangan Bunda Maria",
+			"patterns": [
+				"kapan kapal Bunda Maria tiba di ternate?",
+				"jam berapa kapal Bunda Maria akan sampai di ternate?"
+			],
+			"responses": [
+				"kapal Bunda Maria diperkirakan waktu tiba dari bacan ke ternate pada jam 05:00 WIT. jika kapal Bunda Maria dari ternate maka diperkirakan tiba di bacan kurang lebih jam 05:00 WIT"
+			]
+		},
+		{
+			"tag": "makanan di kapal Bunda Maria",
+			"patterns": [
+				"makanan apa saja yang tersedia di kapal Bunda Maria?",
+				"apakah bisa memesan makanan di kapal Bunda Maria?"
+			],
+			"responses": ["kapal Bunda Maria menyediakan makanan di kantin kapal"]
+		},
+		{
+			"tag": "minuman di kapal Bunda Maria",
+			"patterns": [
+				"minuman apa saja yang tersedia di kapal Bunda Maria?",
+				"minuman di kapal Bunda Maria"
+			],
+			"responses": [
+				"minuman yang tersedia di kapal Bunda Maria adalah berbagai minuman yang dapat dipesan melalui kantin kapal, misalkan minuman dingin dan minuman hangat. anda bisa sambil nyantai di dek 3 kapal bagian belakang dengan menghirup udara segar"
+			]
+		},
+		{
+			"tag": "prosedur naik kapal Bunda Maria",
+			"patterns": [
+				"apa yang harus dilakukan saat naik kapal Bunda Maria?",
+				"bagaiamana proses boarding kapal Bunda Maria?",
+				"apa yang perlu disiapkan saat naik kapal Bunda Maria?"
+			],
+			"responses": [
+				"saat naik kapal, pastikan anda sudah mempersiapkan tiket dan kartu identias anda yang sesuai untuk diperiksa oleh petugas. "
+			]
+		},
+		{
+			"tag": "kontak darurat Bunda Maria",
+			"patterns": [
+				"bagaimana cara menghubungi kontak darurat di kapal Bunda Maria?",
+				" apakah ada nomor kontak darurat di kapal Bunda Maria?",
+				"kontak darurat Bunda Maria"
+			],
+			"responses": [
+				"untuk menghubungi kontak darurat kapal Bunda Maria, anda dapat menghubungi nomor 082290667123"
+			]
+		},
+		{
+			"tag": "perjalanan ternate sanana",
+			"patterns": [
+				"kapal apa yang memiliki rute perjalanan ternate sanana?",
+				"rute kapal ternate sanana",
+				"rute kapal sanana ternate"
+			],
+			"responses": [
+				"kapal yang tersedia saat ini untuk rute perjalanan ternate sanana yaitu kapal aksar saputra 09"
+			]
+		},
+		{
+			"tag": "kapal kendari",
+			"patterns": ["kapal apa yang berangkat hari rabu?"],
+			"responses": ["kapal simba 01 berangkat hari rabu"]
+		},
+		{
+			"tag": "rute aksar saputra 09",
+			"patterns": ["rute perjalanan aksar saputra 09"],
+			"responses": [
+				"rute perjalanan yang dimiliki kapal aksar saputra 09 yaitu dari manado ke ternate, lalu ternate ke sanana, sanana ke dofa, dofa ke fala. kemudian balik lagi dari fala ke dofa, dofa ke sanana, sanana ke ternate dan terakhir ternate ke manado"
+			]
+		},
+		{
+			"tag": "rute aksar saputra 08",
+			"patterns": ["rute perjalanan aksar saputra 08"],
+			"responses": [
+				"rute perjalanan yangn dimiliki kapal aksar saputra 08 yaitu dari kendari ke raha maupun raha ke kendari"
+			]
+		},
+		{
+			"tag": "ternate sanana",
+			"patterns": ["kapal apa yang berangkat dari ternate ke sanana?"],
+			"responses": [
+				"saat ini kapal yang berangkat dari ternate ke sanana yaitu kapal aksar saputra 09"
+			]
+		},
+		{
+			"tag": "jadwal aksar 23",
+			"patterns": [
+				"jadwal kapal aksar saputra 23",
+				"jadwal aksar 23",
+				"jadwal aksar saputra 23",
+				"jam berapa kapal aksar 23 berangkat?",
+				"jam berapa aksar 23 berangkat?",
+				"jam berapa kapal aksar saputra 23 berangkat?",
+				"jam berapa akasr saputra 23 berangkat"
+			],
+			"responses": [
+				"jadwal aksar saputra 23 berangkat dari manado setiap hari jumat. dimana memiliki rute manado-dama-tobelo-morotai, dan kapal aksar saputra 23 berangkat dari tobelo ke morotai pada hari sabtu jam 1 siang di pelabuhan tobelo"
+			]
+		},
+		{
+			"tag": "jadwal aksar 09",
+			"patterns": [
+				"jadwal kapal aksar saputra 09",
+				"jadwal aksar 09",
+				"jadwal aksar saputra 09",
+				"jadwal aksar 9",
+				"jadwal aksar saputra 9",
+				"jadwal kapal aksar saputra 09",
+				"jadwal kapal aksar 9",
+				"jam berapa kapal aksar 09 berangkat?",
+				"jam berapa aksar 9 berangkat?",
+				"jam berapa kapal aksar saputra 09 berangkat?",
+				"jam berapa akasr saputra 9 berangkat"
+			],
+			"responses": [
+				"kapal aksar saputra 09 berangkat dari Ternate setiap hari minggu dan rabu pada jam 17:00/18:00 WIT. dimana hari rabu dan minggu memiliki rutenya perjalanan yang berbeda, kapal aksar saputra 09 berangkat dari ternate ke manado pada hari rabu di pelabuhan ahmad yani ternate, kapal aksar saputra 09 berangkat dari ternate ke sanana yaitu pada hari minggu dari pelabuhan ahmad yani ternate, kapal aksar saputra 09 berangkat dari sanana ke fala pada hari minggu dari pelabuhan sanana"
+			]
+		},
+		{
+			"tag": "jadwal aksar 08",
+			"patterns": [
+				"jadwal kapal aksar saputra 08",
+				"jadwal aksar 08",
+				"jadwal aksar saputra 08",
+				"jadwal aksar 8",
+				"jadwal aksar saputra 8",
+				"jadwal kapal aksar saputra 8",
+				"jadwal kapal aksar 8",
+				"jam berapa kapal aksar 08 berangkat?",
+				"jam berapa aksar 8 berangkat?",
+				"jam berapa kapal aksar saputra 08 berangkat?",
+				"jam berapa akasr saputra 8 berangkat"
+			],
+			"responses": [
+				"kapal aksar saputra 08 berangkat dari kendari ke raha setiap hari jumat pada jam 21:00/22:00 WITA, tetapi akan berubah sesuai dengan rute len perjalannya. biasanya 2 malam setelah berangkat. kapal aksar saputra 08 akan kembali berangkat ke dari asal ke tujuan"
+			]
+		},
+		{
+			"tag": "jadwal kapal simba 01",
+			"patterns": [
+				"jadwal kapal simba 01",
+				"jadwal kapal simba",
+				"jadwal kapal simba 1",
+				"informasi kapal simba",
+				"informasi kapal simba 01",
+				"informasi kapal simba",
+				"jadwal simba",
+				"jadwal simba 01"
+			],
+			"responses": [
+				"kapal simba 01 adalah kapal yang memiliki rute perjalanan wanci ke kendari. kapal Simba 01 berangkat pada hari rabu dari wanci ke kendari, kapal Simba 01 berangkat pada hari kamis dari kendari ke wanci. jam keberangkatan kapal simba 01 yaitu pada jam 09:00 WITA",
+				"jam berapa kapal simba 01 berangkat?",
+				"jam berapa simba berangkat?",
+				"jam berapa kapal simba berangkat?"
+			]
+		},
+		{
+			"tag": "jadwal Napoleon 777",
+			"patterns": [
+				"jadwal kapal Napoleon 777",
+				"jadwal kapal Napoleon",
+				"jadwal Napoleon",
+				"informasi kapal Napoleon",
+				"informasi kapal Napoleon 777",
+				"informasi kapal Napoleon",
+				"informasi Napoleon 777",
+				"informasi napoleon",
+				"jadwal napoleon",
+				"jadwal napoleon 777",
+				"jam berapa napoleon berangkat?",
+				"jam berapa kapal napoleon 777 berangkat?",
+				" jam berapa kapal napoleon berangkat?"
+			],
+			"responses": [
+				"kapal Napoleon 777 adalah kapal yang memiliki rute perjalanan kendari dan wanci. dimana berangkat pada hari selasa dari wanci ke kendari dan berangkat pada hari rabu dari kendari pada jam 09:00 WITA"
+			]
+		},
+		{
+			"tag": "jadwal aksar saputra",
+			"patterns": [
+				"jadwal kapal aksar saputra",
+				"jadwal aksar saputra",
+				"jadwal aksar",
+				"informasi kapal aksar",
+				"informasi kapal aksar saputra",
+				"informasi aksar saputra",
+				"kapal aksar",
+				"aksar saputra"
+			],
+			"responses": [
+				"ada beberapa jadwal kapal Aksar Saputra diantaranya yaitu kapal Aksar Saputra 09, Aksar Saputra 08 dan Aksar Saputra 23. kapal Aksar Saputra 09 berangkat dari Ternate setiap hari minggu dan rabu. dimana hari rabu dan minggu memiliki rutenya perjalanan yang berbeda, kapal Aksar Saputra 09 berangkat dari ternate ke manado pada hari rabu di pelabuhan ahmad yani ternate, kapal Aksar Saputra 09 berangkat dari ternate ke sanana yaitu pada hari minggu dari pelabuhan ahmad yani ternate, kapal Aksar Saputra 09 berangkat dari sanana ke fala pada hari minggu dari pelabuhan sanana. kapal Aksar Saputra 08 berangkat dari kendari ke raha setiap hari jumat, tetapi akan berubah sesuai dengan rute len perjalannya. biasanya 2 malam setelah berangkat. kapal Aksar Saputra 08 akan kembali berangkat ke dari asal ke tujuan. Kapal Aksar Saputra 23 berangkat dari manado setiap hari jumat. dimana memiliki rute manado-dama-tobelo-morotai, dan kapal Aksar Saputra 23 berangkat dari tobelo ke morotai pada hari sabtu jam 1 siang di pelabuhan tobelo"
+			]
+		},
+		{
+			"tag": "rute aksar saputra 23",
+			"patterns": [
+				"rute perjalanan aksar saputra 23",
+				"rute kapal aksar saputra 23",
+				"rute aksar saputra 23"
+			],
+			"responses": [
+				"rute perjalanan yang dimiliki kapal aksar saputra 23 yaitu manado, dama, tobelo, morotai"
+			]
+		},
+		{
+			"tag": "pesan tiket aksar saputra ",
+			"patterns": [
+				"bagaimana cara pesan tiket kapal aksar saputra?",
+				"bagaimana cara saya mendapatkan tiket kapal aksar saputra?",
+				"cara pesan tiket kapal aksar",
+				"cara pesan tiket aksar saputra",
+				"tiket kapal aksar saputra",
+				"cara pesan tiket aksar"
+			],
+			"responses": [
+				"Harga tiket kapal aksar saputra berbeda beda karena sesuai rute perjalanan yang dimiliki kapal tersebut. Diinformasikan untuk memesan tiket kapal aksar saputra dapat dilakukan di loket tiket yang berlokasi di mangga dua, dan anda juga bisa membelinya secara online melalui situs web FERINESIA.COM"
+			]
+		},
+		{
+			"tag": "pesan tiket simba 01 ",
+			"patterns": [
+				"bagaimana cara pesan tiket kapal simba 01?",
+				"bagaimana cara pesan tiket kapal simba?",
+				"bagaimana cara saya mendapatkan tiket kapal simba?",
+				"cara pesan tiket kapal simba",
+				"cara pesan tiket simba 01",
+				"tiket kapal simba 01",
+				"cara pesan tiket simba",
+				"tiket kapal simba"
+			],
+			"responses": [
+				"pemesanan tiket kapal simba 01 dilakukan di loket penjualan tiket di pelabuhan wanci jika dari wanci dan di pelabuhan kapal wanci di kendari jika berangkat dari kendari. Pembelian tiket dapat dilakukan 1 hari sebelum keberangkatan."
+			]
+		},
+		{
+			"tag": "pesan tiket Napoleon 777 ",
+			"patterns": [
+				"bagaimana cara pesan tiket kapal Napoleon 777?",
+				"bagaimana cara pesan tiket kapal Napoleon?",
+				"bagaimana cara saya mendapatkan tiket kapal Napoleon 777?",
+				"cara pesan tiket kapal Napoleon 777",
+				"cara pesan tiket Napoleon",
+				"tiket kapal Napoleon 777",
+				"cara pesan tiket Napoleon",
+				"tiket kapal Napoleon"
+			],
+			"responses": [
+				"pemesanan tiket kapal Napoleon 777 dilakukan di loket penjualan tiket di pelabuhan wanci jika dari wanci dan di pelabuhan kapal wanci di kendari jika berangkat dari kendari. Pembelian tiket dapat dilakukan 1 hari sebelum keberangkatan."
+			]
+		},
+		{
+			"tag": "harga tiket kapal aksar ",
+			"patterns": [
+				"harga tiket kapal aksar",
+				"harga tiket kapal aksar saputra",
+				"berapa harga tiket kapal aksar",
+				"berapa harga tiket kapal aksar saputra",
+				"harga tiket aksar saputra",
+				"berapa harga tiket aksar",
+				"berapa harga tiket aksar",
+				"tiket kapal",
+				"harga tiket",
+				"tiket aksar"
+			],
+			"responses": [
+				"harga tiket kapal aksar saputra 09 pada rute ternate-sanana yaitu Rp.370.000, Ternate-fala yaitu Rp.480.000, ternate-dofa Rp.390.000, ternate-manado Rp. 365.000 per tiket ekonomi/di ranjang tidur. sedangkan tersedia kamar juga dengan harga tiketnya Rp.250.000 per orang untuk sewa kamar. harga tiket kapal aksar saputra 08 pada rute Kendari-Raha(pp) yaitu Rp.145.000 sedangkan tersedia kamar juga dengan harga tiketnya Rp.200.000 per orang untuk sewa kamar. harga tiket kapal aksar saputra 23 yaitu manado ke dama Rp.400.000, tobelo ke morotai Rp.100.000, manado ke morotai Rp 500.000, dama ke tobelo Rp.100.000"
+			]
+		},
+		{
+			"tag": "harga tiket kapal simba 01 ",
+			"patterns": [
+				"harga tiket kapal simba 01",
+				"harga tiket kapal simba",
+				"berapa harga tiket kapal simba 01",
+				"berapa harga tiket kapal simba",
+				"harga tiket simba 01",
+				"berapa harga tiket simba",
+				"berapa harga tiket simba 01",
+				"tiket kapal simba 01",
+				"harga tiket simba",
+				"informasi tiket kapal simba 01",
+				"informasi tiket simba 01"
+			],
+			"responses": [
+				"Harga tiket kapal simba 01 dari wanci ke kendari (pp) adalah Rp.220.000 perorang (dewasa) dan harga tiket kamar Rp.200.000 perorang"
+			]
+		},
+		{
+			"tag": "harga tiket kapal napoleon 777 ",
+			"patterns": [
+				"harga tiket kapal napoleon 777",
+				"harga tiket kapal napoleon",
+				"berapa harga tiket kapal napoleon 777",
+				"berapa harga tiket kapal napoleon",
+				"harga tiket napoleon 777",
+				"berapa harga tiket napoleon",
+				"berapa harga tiket napoleon 777",
+				"tiket kapal napoleon 777",
+				"harga tiket napoleon",
+				"informasi tiket kapal napoleon 777"
+			],
+			"responses": [
+				"Harga tiket kapal napoleon 777 dari wanci ke kendari (pp) adalah Rp.220.000 perorang (dewasa) dan harga tiket kamar Rp.200.000 perorang"
+			]
+		},
+		{
+			"tag": "kapal wanci ",
+			"patterns": ["kapal wanci, kapal kendari"],
+			"responses": [
+				"saat ini kapal yang tersedia rute wanci yaitu kapal Simba 01 dan Napoleon 777 dimana memiiki rute wanci-kendari(pp)"
+			]
+		},
+		{
+			"tag": "harga kamar kapal aksar",
+			"patterns": [
+				"harga kamar kapal aksar",
+				"harga kamar aksar",
+				"informasi harga kamar kapal aksar",
+				"informasi harga kamar aksar saputra",
+				"informasi tiket kamar aksar",
+				"informasi tiket kamar kapal aksar",
+				"informasi harga tiket kamar aksar",
+				"informasi tiket kamar kapal aksar",
+				"harga kamar kapal simba",
+				"harga kamar simba 01",
+				"informasi harga kamar kapal simba 01",
+				"informasi harga kamar simba 01",
+				"informasi tiket kamar simba 01",
+				"informasi tiket kamar kapal simba 01",
+				"informasi harga tiket kamar simba",
+				"informasi tiket kamar kapal simba 01",
+				"tiket kamar simba 01",
+				"tikte kamar aksar saputra 09",
+				"tiket kamar aksar saputra 08",
+				"tiket kamar aksar saputra 23",
+				"tiket kamar napoleon 777",
+				"harga kamar kapal",
+				"informasi harga kamar",
+				"harga kamar"
+			],
+			"responses": [
+				"saat ini kapal yang tersedia rute wanci yaitu kapal Simba 01 dan Napoleon 777 dimana memiiki rute wanci-kendari(pp) dengan harga kamar yaitu Rp.200.000 dan kapal aksar saputra 09, aksar saputra 08, dan aksar saputra 23 memiliki rute yag berbeda-beda tetapi memiliki harga tiket kamar yang sama yaitu Rp.250.000 perorang"
+			]
+		},
+		{
+			"tag": "jadwal kapal tiba",
+			"patterns": ["jadwal kapal tiba", "kapal tiba"],
+			"responses": [
+				"kapal aksar saputra 09 tiba di sanana hari senin pagi pada jam 08:00 WIT, tiba di fala jam 19:00 WIT dari sanana, tiba di ternate pada hari rabu jam 08:00 WIT di pelabuhan ahmad yani, kapal aksar saputra 08 tiba di raha jam 05:00 WITA, berangkat dari kendari jam 22:00 WITA begitupun dari raha dan kendari berangkat jam 22:00 WITA lalu tiba di kendari jam 05:00 WITA, kapal aksar saputra 23 berangkat dari manado hari jumat dan tiba di tobelo hari sabtu jam 08:00 WIT, lalu berangkat dari tobelo tujuan morotai pada jam 10:00 WIT dan tiba di morotai jam 19:00 WIT. lanjut berangkat dari morotai ke tobelo jam 15:00 WIT, kemudian tobelo ke dama pada jam 17:00, tiba di dama jam 18:00 WIT. kemudian berangkat di hari selasa jam 12:00 ke manado dan tiba jam 08:00 WIT, kapal napoleon 777 tiba dari kendari ke wanci pada hari rabu dan hari minggu pada jam 17:00/18:00 WITA, kapal napoelon 777 tiba dari wanci ke kendari pada hari selasa dan sabtu pada jam 17:00/18:00 WITA, kapal simba 01 tiba dari kendari pada hari kamis dan senin pada jam 17:00/18:00 WITA, kapal simba 01 tiba di wanci pada hari rabu dan minggu pada jam 17:00/18:00 WITA",
+				"kapal simba 01 tiba di wanci pada hari kamis dan senin pada jam 17:00/18:00 WITA"
+			]
+		},
+		{
+			"tag": "aksar saputra 09 tiba",
+			"patterns": [
+				"kapan aksar saputra 09 tiba di tenate?",
+				"kapan aksar saputra 9 tiba di tenate?",
+				"kapan aksar 09 tiba di tenate?",
+				"kapan aksar 9 tiba di tenate?",
+				"kapan aksar saputra 09 tiba di fala?",
+				"kapan aksar saputra 9 tiba di fala?",
+				"kapan aksar 09 tiba di fala?",
+				"kapan aksar 9 tiba di fala?",
+				"kapan aksar 9 tiba di manado?",
+				"kapan aksar saputra 09 tiba di manado?",
+				"kapan aksar saputra 9 tiba di manado?",
+				"kapan aksar 09 tiba di manado?"
+			],
+			"responses": [
+				"kapal aksar saputra 09 tiba di sanana hari senin pagi pada jam 08:00 WIT, tiba di fala jam 19:00 WIT dari sanana, tiba di ternate pada hari rabu jam 08:00 WIT di pelabuhan ahmad yani, kapal aksar saputra 08 tiba di raha jam 05:00 WITA, berangkat dari kendari jam 22:00 WITA begitupun dari raha dan kendari berangkat jam 22:00 WITA lalu tiba di kendari jam 05:00 WITA, kapal aksar saputra 23 berangkat dari manado hari jumat dan tiba di tobelo hari sabtu jam 08:00 WIT, lalu berangkat dari tobelo tujuan morotai pada jam 10:00 WIT dan tiba di morotai jam 19:00 WIT. lanjut berangkat dari morotai ke tobelo jam 15:00 WIT, kemudian tobelo ke dama pada jam 17:00, tiba di dama jam 18:00 WIT. kemudian berangkat di hari selasa jam 12:00 ke manado dan tiba jam 08:00 WIT, kapal napoleon 777 tiba dari kendari ke wanci pada hari rabu dan hari minggu pada jam 17:00/18:00 WITA, kapal napoelon 777 tiba dari wanci ke kendari pada hari selasa dan sabtu pada jam 17:00/18:00 WITA, kapal simba 01 tiba dari kendari pada hari kamis dan senin pada jam 17:00/18:00 WITA, kapal simba 01 tiba di wanci pada hari rabu dan minggu pada jam 17:00/18:00 WITA",
+				"kapal simba 01 tiba di wanci pada hari kamis dan senin pada jam 107:00/18:00 WITA"
+			]
+		},
+		{
+			"tag": "aksar saputra 08 tiba",
+			"patterns": [
+				"kapan aksar saputra 08 tiba di kendari?",
+				"kapan aksar saputra 8 tiba di kendari?",
+				"kapan aksar 08 tiba di kendari?",
+				"kapan aksar 8 tiba di kendari?"
+			],
+			"responses": [
+				"kapal aksar saputra 08 tiba di raha jam 05:00 WITA dimana berangkat dari kendari jam 22:00 WITA begitupun dari raha dan kendari berangkat jam 22:00 WITA lalu tiba di kendari jam 05:00 WITA, kapal aksar saputra 23 berangkat dari manado hari jumat dan tiba di tobelo hari sabtu jam 08:00 WIT, lalu berangkat dari tobelo tujuan morotai pada jam 10:00 WIT dan tiba di morotai jam 19:00 WIT. lanjut berangkat dari morotai ke tobelo jam 15:00 WIT, kemudian tobelo ke dama pada jam 17:00, tiba di dama jam 18:00 WIT. kemudian berangkat di hari selasa jam 12:00 ke manado dan tiba jam 08:00 WIT, kapal napoleon 777 tiba dari kendari ke wanci pada hari rabu dan hari minggu pada jam 17:00/18:00 WITA, kapal napoelon 777 tiba dari wanci ke kendari pada hari selasa dan sabtu pada jam 17:00/18:00 WITA, kapal simba 01 tiba dari kendari pada hari kamis dan senin pada jam 17:00/18:00 WITA, kapal simba 01 tiba di wanci pada hari rabu dan minggu pada jam 17:00/18:00 WITA",
+				"kapal simba 01 tiba di wanci pada hari kamis dan senin pada jam 107:00/18:00 WITA"
+			]
+		},
+		{
+			"tag": "aksar saputra 23 tiba",
+			"patterns": [
+				"kapan aksar saputra 23 tiba di manado?",
+				"kapan aksar saputra 23 tiba di manado?",
+				"kapan aksar 23 tiba di manado?",
+				"kapan aksar 23 tiba di tobelo?",
+				"kapan aksar saputra 23 tiba di tobelo?",
+				"kapan aksar saputra 23 tiba di morotai?",
+				"kapan aksar 23 tiba di morotai?",
+				"kapan aksar 23 tiba di morotai?",
+				"kapan aksar 23 tiba di dama?",
+				"kapan aksar 23 tiba di dama?"
+			],
+			"responses": [
+				"kapal aksar saputra 23 berangkat dari manado hari jumat dan tiba di tobelo hari sabtu jam 08:00 WIT, lalu berangkat dari tobelo tujuan morotai pada jam 10:00 WIT dan tiba di morotai jam 19:00 WIT. lanjut berangkat dari morotai ke tobelo jam 15:00 WIT, kemudian tobelo ke dama pada jam 17:00, tiba di dama jam 18:00 WIT. kemudian berangkat di hari selasa jam 12:00 ke manado dan tiba jam 08:00 WIT, kapal napoleon 777 tiba dari kendari ke wanci pada hari rabu dan hari minggu pada jam 17:00/18:00 WITA, kapal napoelon 777 tiba dari wanci ke kendari pada hari selasa dan sabtu pada jam 17:00/18:00 WITA, kapal simba 01 tiba dari kendari pada hari kamis dan senin pada jam 17:00/18:00 WITA, kapal simba 01 tiba di wanci pada hari rabu dan minggu pada jam 17:00/18:00 WITA",
+				"kapal simba 01 tiba di wanci pada hari kamis dan senin pada jam 107:00/18:00 WITA"
+			]
+		},
+		{
+			"tag": "napoleon 777 tiba",
+			"patterns": [
+				"kapan napoleon tiba",
+				"kapan napoleon 777 tiba",
+				"kapan napoleon 777 tiba di kendari?",
+				"kapan napoleon 777 tiba di kendari?",
+				"kapan napoleon tiba di kendari?",
+				"kapan napoleon tiba di kendari?",
+				"kapan napoleon 777 tiba di wanci?",
+				"kapan napoleon 777 tiba di wanci?",
+				"kapan napoleon tiba di wanci?",
+				"kapan napoleon tiba di wanci?"
+			],
+			"responses": [
+				"kapal napoleon 777 tiba di wanci pada hari rabu dan hari minggu pada jam 17:00/18:00 WITA, kapal napoelon 777 tiba di kendari pada hari selasa dan sabtu pada jam 17:00/18:00 WITA"
+			]
+		},
+		{
+			"tag": "simba 01 tiba",
+			"patterns": [
+				"kapan simba tiba",
+				"kapan simba 01 tiba",
+				"kapan simba 01 tiba di kendari?",
+				"kapan simba tiba di kendari?",
+				"kapan simba 01 tiba di wanci?",
+				"kapan simba 01 tiba di wanci?",
+				"kapan simba tiba di wanci?"
+			],
+			"responses": [
+				"kapal simba 01 atau simba tiba di wanci pada hari kamis dan senin pada jam 17:00/18:00 WITA, kapal simba 01 atau simba tiba di kendari pada hari rabu dan minggu pada jam 17:00/18:00 WITA"
+			]
+		},
+		{
+			"tag": "jam bunda maria",
+			"patterns": [
+				"jam berapa bunda maria berangkat?",
+				"jam berapa kapal bunda maria berangkat?"
+			],
+			"responses": [
+				"bunda maria berangkat setiap jam 21:00:00 WIT pada jadwal keberangkatannya, tapi jika muatan banyak dihari itu maka kemungkinan keberangkatan di undur hingga jam 22:00 WIT"
+			]
+		},
+		{
+			"tag": "tiba bunda maria",
+			"patterns": [
+				"kapan bunda maria tiba?",
+				"jam berapa kapal bunda maria tiba?",
+				"kapan kapal bunda maria tiba?",
+				"jam berapa bunda maria tiba"
+			],
+			"responses": [
+				"bunda maria tiba di tempat tujuan ternate maupun bacan yaitu di jam 05:00 WIT"
+			]
+		},
+		{
+			"tag": "jadwal kapal senin",
+			"patterns": [
+				"kapal apa yang berangkat hari senin?",
+				"jadwal kapal hari senin"
+			],
+			"responses": ["Hari Senin tidak tersedia jadwal kapal yang berangkat."]
+		},
+		{
+			"tag": "jadwal kapal selasa",
+			"patterns": [
+				"kapal apa yang berangkat hari selasa?",
+				"jadwal kapal hari selasa"
+			],
+			"responses": [
+				"Hari Selasa terdapat kapal Napoleon 777 yang berangkat dari Wanci tujuan Kendari pada jam 09:00 WITA dan tiba di Kendari pada jam 17:00/18:00 WITA."
+			]
+		},
+		{
+			"tag": "jadwal kapal rabu",
+			"patterns": [
+				"kapal apa yang berangkat hari rabu?",
+				"jadwal kapal hari rabu"
+			],
+			"responses": [
+				"Hari Rabu terdapat kapal Simba 01 yang berangkat dari Wanci tujuan Kendari pada jam 09:00 WITA dan tiba di Kendari pada jam 17:00/18:00 WITA.",
+				"Kapal Napoleon 777 berangkat dari Kendari tujuan Wanci pada jam 09:00 WITA tiba di Wanci jam 17:00/18:00 WITA.",
+				"Kapal Aksar Saputra 09 berangkat dari Ternate tujuan Manado pada jam 16:00/17:00 WIT tiba di pelabuhan Manado pada jam 08:00 WIT."
+			]
+		},
+		{
+			"tag": "jadwal kapal kamis",
+			"patterns": [
+				"kapal apa yang berangkat hari kamis?",
+				"jadwal kapal hari kamis"
+			],
+			"responses": [
+				"Hari Kamis terdapat kapal Simba 01 berangkat dari Kendari tujuan Wanci pada jam 09:00 WITA tiba di pelabuhan Wanci pada jam 17:00/18:00 WITA."
+			]
+		},
+		{
+			"tag": "jadwal kapal jumat",
+			"patterns": [
+				"kapal apa yang berangkat hari jumat?",
+				"jadwal kapal hari jumat"
+			],
+			"responses": ["Hari Jumat tidak ada jadwal kapal berangkat."]
+		},
+		{
+			"tag": "jadwal kapal sabtu",
+			"patterns": [
+				"kapal apa yang berangkat hari sabtu?",
+				"jadwal kapal hari sabtu"
+			],
+			"responses": [
+				"Hari Sabtu kapal Napoleon 777 berangkat dari Wanci tujuan Kendari pada jam 09:00 WITA dan tiba di pelabuhan Kendari jam 17:00/18:00 WITA."
+			]
+		},
+		{
+			"tag": "jadwal kapal minggu",
+			"patterns": [
+				"kapal apa yang berangkat hari minggu?",
+				"jadwal kapal hari minggu"
+			],
+			"responses": [
+				"Hari Minggu kapal Aksar Saputra 09 tiba dari Manado pada jam 08:00 WIT.",
+				"Kapal Aksar Saputra 09 akan berangkat dari Ternate tujuan Sanana pada jam 16:00/17:00 WIT."
+			]
+		},
+		{
+			"tag": "jadwal kapal senin pagi",
+			"patterns": [
+				"kapal apa yang berangkat hari senin pagi?",
+				"jadwal kapal hari senin pagi"
+			],
+			"responses": [
+				"Hari Senin pagi tidak tersedia jadwal kapal yang berangkat."
+			]
+		},
+		{
+			"tag": "jadwal kapal senin siang",
+			"patterns": [
+				"kapal apa yang berangkat hari senin siang?",
+				"jadwal kapal hari senin siang"
+			],
+			"responses": [
+				"Hari Senin siang tidak tersedia jadwal kapal yang berangkat."
+			]
+		},
+		{
+			"tag": "jadwal kapal senin sore",
+			"patterns": [
+				"kapal apa yang berangkat hari senin sore?",
+				"jadwal kapal hari senin sore"
+			],
+			"responses": [
+				"Hari Senin sore tidak tersedia jadwal kapal yang berangkat."
+			]
+		},
+		{
+			"tag": "jadwal kapal senin malam",
+			"patterns": [
+				"kapal apa yang berangkat hari senin malam?",
+				"jadwal kapal hari senin malam"
+			],
+			"responses": [
+				"Hari Senin malam tidak tersedia jadwal kapal yang berangkat."
+			]
+		},
+		{
+			"tag": "jadwal kapal selasa pagi",
+			"patterns": [
+				"kapal apa yang berangkat hari selasa pagi?",
+				"jadwal kapal hari selasa pagi"
+			],
+			"responses": [
+				"Jadwal kapal hari Selasa pagi terdapat kapal Napoleon 777 yang berangkat dari Wanci tujuan Kendari pada jam 09:00 WITA dan tiba di Kendari pada jam 17:00/18:00 WITA."
+			]
+		},
+		{
+			"tag": "jadwal kapal selasa siang",
+			"patterns": [
+				"kapal apa yang berangkat hari selasa siang?",
+				"jadwal kapal hari selasa siang"
+			],
+			"responses": ["Hari Selasa siang tidak tersedia jadwal kapal."]
+		},
+		{
+			"tag": "jadwal kapal selasa sore",
+			"patterns": [
+				"kapal apa yang berangkat hari selasa sore?",
+				"jadwal kapal hari selasa sore"
+			],
+			"responses": ["Hari Selasa sore tidak tersedia jadwal kapal."]
+		},
+		{
+			"tag": "jadwal kapal selasa malam",
+			"patterns": [
+				"kapal apa yang berangkat hari selasa malam?",
+				"jadwal kapal hari selasa malam"
+			],
+			"responses": ["Hari Selasa malam tidak tersedia jadwal kapal."]
+		},
+		{
+			"tag": "jadwal kapal rabu pagi",
+			"patterns": [
+				"kapal apa yang berangkat hari rabu pagi?",
+				"jadwal kapal hari rabu pagi"
+			],
+			"responses": [
+				"Hari Rabu pagi terdapat kapal Simba 01 yang berangkat dari Wanci tujuan Kendari pada jam 09:00 WITA dan tiba di Kendari pada jam 17:00/18:00 WITA.",
+				"Hari Rabu pagi Kapal Napoleon 777 berangkat dari Kendari tujuan Wanci pada jam 09:00 WITA tiba di Wanci jam 17:00/18:00 WITA."
+			]
+		},
+		{
+			"tag": "jadwal kapal rabu siang",
+			"patterns": [
+				"kapal apa yang berangkat hari rabu siang?",
+				"jadwal kapal hari rabu siang"
+			],
+			"responses": ["Hari Rabu siang tidak tersedia jadwal kapal."]
+		},
+		{
+			"tag": "jadwal kapal rabu sore",
+			"patterns": [
+				"kapal apa yang berangkat hari rabu sore?",
+				"jadwal kapal hari rabu sore"
+			],
+			"responses": [
+				"Hari Rabu sore Kapal Aksar Saputra 09 berangkat dari Ternate tujuan Manado pada jam 16:00/17:00 WIT tiba di pelabuhan Manado pada jam 08:00 WIT."
+			]
+		},
+		{
+			"tag": "jadwal kapal rabu malam",
+			"patterns": [
+				"kapal apa yang berangkat hari rabu malam?",
+				"jadwal kapal hari rabu malam"
+			],
+			"responses": ["Hari Rabu malam tidak tersedia jadwal kapal."]
+		},
+		{
+			"tag": "jadwal kapal kamis pagi",
+			"patterns": [
+				"kapal apa yang berangkat hari kamis pagi?",
+				"jadwal kapal hari kamis pagi"
+			],
+			"responses": [
+				"Hari Kamis pagi terdapat kapal Simba 01 berangkat dari Kendari tujuan Wanci pada jam 09:00 WITA tiba di pelabuhan Wanci pada jam 17:00/18:00 WITA."
+			]
+		},
+		{
+			"tag": "jadwal kapal kamis siang",
+			"patterns": [
+				"kapal apa yang berangkat hari kamis siang?",
+				"jadwal kapal hari kamis siang"
+			],
+			"responses": ["Hari Kamis siang tidak tersedia jadwal kapal."]
+		},
+		{
+			"tag": "jadwal kapal kamis sore",
+			"patterns": [
+				"kapal apa yang berangkat hari kamis sore?",
+				"jadwal kapal hari kamis sore"
+			],
+			"responses": ["Hari Kamis sore tidak tersedia jadwal kapal."]
+		},
+		{
+			"tag": "jadwal kapal kamis malam",
+			"patterns": [
+				"kapal apa yang berangkat hari kamis malam?",
+				"jadwal kapal hari kamis malam"
+			],
+			"responses": ["Hari Kamis malam tidak tersedia jadwal kapal."]
+		},
+		{
+			"tag": "jadwal kapal jumat pagi",
+			"patterns": [
+				"kapal apa yang berangkat hari jumat pagi?",
+				"jadwal kapal hari jumat pagi"
+			],
+			"responses": ["Hari Jumat pagi tidak tersedia jadwal kapal."]
+		},
+		{
+			"tag": "jadwal kapal jumat siang",
+			"patterns": [
+				"kapal apa yang berangkat hari jumat siang?",
+				"jadwal kapal hari jumat siang"
+			],
+			"responses": ["Hari Jumat siang tidak tersedia jadwal kapal."]
+		},
+		{
+			"tag": "jadwal kapal jumat sore",
+			"patterns": [
+				"kapal apa yang berangkat hari jumat sore?",
+				"jadwal kapal hari jumat sore"
+			],
+			"responses": ["Hari Jumat sore tidak tersedia jadwal kapal."]
+		},
+		{
+			"tag": "jadwal kapal jumat malam",
+			"patterns": [
+				"kapal apa yang berangkat hari jumat malam?",
+				"jadwal kapal hari jumat malam"
+			],
+			"responses": ["Hari Jumat malam tidak tersedia jadwal kapal."]
+		},
+		{
+			"tag": "jadwal kapal sabtu pagi",
+			"patterns": [
+				"kapal apa yang berangkat hari sabtu pagi?",
+				"jadwal kapal hari sabtu pagi"
+			],
+			"responses": [
+				"Hari Sabtu pagi kapal Napoleon 777 berangkat dari Wanci tujuan Kendari pada jam 09:00 WITA dan tiba di pelabuhan Kendari jam 17:00/18:00 WITA."
+			]
+		},
+		{
+			"tag": "jadwal kapal sabtu siang",
+			"patterns": [
+				"kapal apa yang berangkat hari sabtu siang?",
+				"jadwal kapal hari sabtu siang"
+			],
+			"responses": ["Hari Sabtu siang tidak tersedia jadwal kapal."]
+		},
+		{
+			"tag": "jadwal kapal sabtu sore",
+			"patterns": [
+				"kapal apa yang berangkat hari sabtu sore?",
+				"jadwal kapal hari sabtu sore"
+			],
+			"responses": ["Hari Sabtu sore tidak tersedia jadwal kapal."]
+		},
+		{
+			"tag": "jadwal kapal sabtu malam",
+			"patterns": [
+				"kapal apa yang berangkat hari sabtu malam?",
+				"jadwal kapal hari sabtu malam"
+			],
+			"responses": ["Hari Sabtu malam tidak tersedia jadwal kapal."]
+		},
+		{
+			"tag": "jadwal kapal minggu pagi",
+			"patterns": [
+				"kapal apa yang berangkat hari minggu pagi?",
+				"jadwal kapal hari minggu pagi"
+			],
+			"responses": [
+				"Hari Minggu pagi kapal Aksar Saputra 09 tiba dari Manado pada jam 08:00 WIT."
+			]
+		},
+		{
+			"tag": "jadwal kapal minggu siang",
+			"patterns": [
+				"kapal apa yang berangkat hari minggu siang?",
+				"jadwal kapal hari minggu siang"
+			],
+			"responses": ["Hari Minggu siang tidak tersedia jadwal kapal."]
+		},
+		{
+			"tag": "jadwal kapal minggu sore",
+			"patterns": [
+				"kapal apa yang berangkat hari minggu sore?",
+				"jadwal kapal hari minggu sore"
+			],
+			"responses": [
+				"Hari Minggu sore Kapal Aksar Saputra 09 akan berangkat dari Ternate tujuan Sanana pada jam 16:00/17:00 WIT."
+			]
+		},
+		{
+			"tag": "jadwal kapal minggu malam",
+			"patterns": [
+				"kapal apa yang berangkat hari minggu malam?",
+				"jadwal kapal hari minggu malam"
+			],
+			"responses": ["Hari Minggu malam tidak tersedia jadwal kapal."]
+		},
+		{
+			"tag": "fasilitas kamar kapal",
+			"patterns": [
+				"fasilitas kamar kapal aksar",
+				"fasilitas kamar aksar",
+				"informasi fasilitas kamar kapal aksar",
+				"informasi fasilitas kamar aksar saputra",
+				"informasi fasilitas kamar kapal aksar",
+				"informasi fasilitas tiket kamar aksar",
+				"fasailitas kamar kapal simba",
+				"fasilitas kamar simba 01",
+				"informasi fasilitas kamar kapal simba 01",
+				"informasi fasilitas kamar simba 01",
+				"informasi fasilitas kamar simba 01",
+				"informasi fasilitas kamar kapal simba 01",
+				"informasi fasilitas kamar simba",
+				"informasi fasilitas kamar kapal simba 01",
+				"fasilitas kamar simba 01",
+				"fasilitas kamar aksar saputra 09",
+				"fsailitas kamar aksar saputra 08",
+				"fasilitas kamar aksar saputra 23",
+				"fasilitas kamar napoleon 777",
+				"fasilitas kamar kapal",
+				"informasi fasilitas kamar",
+				"fasilitas kamar"
+			],
+			"responses": [
+				"saat ini fasilitas kamar kapal aksar saputra 09, aksar saputra 08, aksar saputra 23, bunda maria, napoleon 777, dan simba 01 yang tersedia yaitu 2 ranjang dikamar, laci dan kipas angin dan harga kamar yaitu Rp.200.000 dan harga tiket kamar yang sama yaitu Rp.250.000 perorang yaitu 2 ranjang dikamar, laci dan AC"
+			]
+		},
+		{
+			"tag": "harga kamar berdasarkan fasilitas",
+			"patterns": [
+				"berapa harga kamar pakai AC?",
+				"berapa harga kamar yang pakai AC?",
+				"harga kamar pakai ac",
+				"harga kamar AC",
+				"harga kamar kipas",
+				"harga kamar kipas angin",
+				"harga kamar pakai kipas",
+				"harga kamar pakai kipas angin",
+				"berapa harga kamar pakai kipas angin",
+				"berapa harga kamar yang pakai kipas angin?"
+			],
+			"responses": [
+				"harga kamar kapal aksar saputra 09, aksar saputra 08, aksar saputra 23, bunda maria, napoleon 777, dan simba 01 yang tersedia yaitu Rp.200.000 perorang dan harga kamar yang memakai AC yaitu Rp.250.000 perorang"
+			]
+		} 
+	]
 }
-
